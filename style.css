@@ -17,6 +17,8 @@ button{
     background-color: rgba(255, 255, 255, 100);
     font-size: 3rem;
     margin-top: 20%;
-    margin-left: 300px;
+    margin-left: 4.7%;
     padding: 140px 140px;
+    border-radius: 10%;
+    border-width: 5px;
 }

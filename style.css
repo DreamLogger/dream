@@ -15,5 +15,8 @@ h1{
 
 button{
     background-color: rgba(198, 37, 37, 0.699);
-    font-size: large;
+    font-size: 5rem;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 }

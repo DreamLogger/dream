@@ -1,6 +1,11 @@
 body{
     background-image: url('dreamer.png');
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
 }
 
 h1{
@@ -12,17 +17,13 @@ h1{
     font-family: serif;
     font-size: 10rem;
 }
-
-p{
-    display: flex;
-    justify-content: center;
-    height: 30%;
-    margin: 0;
-}
     .white-square {
-      width: 400px; 
-      height: 400px; 
-      background-color: white; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-      border-radius: 20px; 
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        display: flex; /* Flexbox to center content */
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
     }

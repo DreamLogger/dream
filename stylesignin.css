@@ -56,7 +56,6 @@ h1{
 
     .button-container {
         display: flex;
-        justify-content: center;
-        gap: 40px; /* Optional: spacing between buttons */
-        margin-bottom: 10%;
+        justify-content: space-between; /* Space between buttons */
+        width: 400px; /* Same width as the white square */
       }

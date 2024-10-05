@@ -25,6 +25,6 @@ button{
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Optional: spacing between buttons */
+    gap: 40px; 
     margin-top: 25%;
   }

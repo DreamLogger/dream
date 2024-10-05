@@ -17,9 +17,14 @@ button{
     background-color: rgba(255, 255, 255, 100);
     font-size: 3rem;
     font-family: serif;
-    margin-top: 20%;
-    margin-left: 4.75%;
-    padding: 140px 140px;
+    padding: 100px 100px;
     border-radius: 10%;
     border-width: 5px;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Optional: spacing between buttons */
+    margin-top: 25%;
+  }

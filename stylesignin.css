@@ -28,3 +28,21 @@ h1{
         justify-content: center; /* Centers content horizontally */
         margin-top: 5%;
     }
+
+    h2{
+        position:absolute;
+        bottom: 60%;
+        left:50%;
+        transform: translateX(-50%);
+        font-family: serif;
+        font-size: 3rem;
+    }
+
+    h3{
+        position:absolute;
+        bottom: 60%;
+        left:50%;
+        transform: translateX(-50%);
+        font-family: serif;
+        font-size: 3rem;
+    }

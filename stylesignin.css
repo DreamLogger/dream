@@ -12,3 +12,7 @@ h1{
     font-family: serif;
     font-size: 10rem;
 }
+
+textarea {
+    resize: none;
+  }

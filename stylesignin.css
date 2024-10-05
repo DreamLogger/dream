@@ -16,12 +16,14 @@ h1{
 #btn1{
     display: flex;
     justify-content: center;
+    align-items: baseline;
     margin-bottom: 10%;
 }
 
 #btn2{
     display: flex;
     justify-content: center;
+    align-items: baseline;
     margin-bottom: 15%;
 }
 

@@ -21,3 +21,9 @@ h1{
     background-color: transparent;
     border-color: transparent;
 }
+
+#btn1{
+    display: flex;
+    justify-content: center;
+    margin-top: 40%;
+}

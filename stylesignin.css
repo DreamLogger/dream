@@ -17,3 +17,8 @@ h1{
     font-family: serif;
     font-size: 10rem;
 }
+
+.container {
+    display: felx;
+    justify-content: center;
+}

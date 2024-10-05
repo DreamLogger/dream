@@ -1,11 +1,6 @@
 body{
     background-image: url('dreamer.png');
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-
 }
 
 h1{

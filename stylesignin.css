@@ -19,8 +19,8 @@ h1{
 }
 
     .white-square {
-        width: 600px;
-        height: 600px;
+        width: 400px;
+        height: 400px;
         background-color: white;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 20px;

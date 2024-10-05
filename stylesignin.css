@@ -48,3 +48,9 @@ h1{
         font-size: 3rem;
         color: #483966;
     }
+
+    button{
+        margin-bottom: 10%;
+        display: flex;
+        align-items: center;
+    }

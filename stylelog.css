@@ -39,6 +39,12 @@ h1{
 
 h6{
     position:absolute;
-    bottom: 75%;
-    left:70%;
+    bottom: 40%;
+    left:67%;
+    font-size: 3rem;
+    background-color: white;
+    padding: 20px 20px;
+    color: #483966;
+    background-color: #869cc6;
+    border-radius: 10%;
 }

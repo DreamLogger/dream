@@ -22,3 +22,7 @@ h1{
     /* gap: 20px; */
 }
 
+.container2{
+    display: flex;
+    justify-content: center;
+}

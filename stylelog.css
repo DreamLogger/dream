@@ -23,3 +23,15 @@ h1{
     display: flex;
     justify-content: flex-start;
 }
+
+#btn1{
+    color: #483966;
+    font-family: serif;
+    font-size: 5rem;
+    position:absolute;
+    bottom: 66%;
+    left:10%;
+    background-color: white;
+    border-color: #869cc6;
+    border-width: 5px:
+}

@@ -12,7 +12,7 @@ var dateInput;
 var descriptionInput;
 //Input Variables
 
-onEvent("saveBtn","click",function(){
+addEventListener("click",function(){
     gatherInputs();
     saveEntry();
     console.log(title,0)

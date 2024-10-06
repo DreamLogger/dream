@@ -12,13 +12,16 @@ var dateInput;
 var descriptionInput;
 //Input Variables
 
+//Gather Document id
+const saveBtn=document.getElementById("saveBtn")
+//Gather Document id
 
-saveBtn.onclick=function(){
+saveBtn.addEventListener("click",function(){
     gatherInputs();
     saveEntry();
     console.log(title,0);
     console.log(type,0);
-};
+});
 
 function gatherInputs(){
     var titleInput=getText("titleInput");

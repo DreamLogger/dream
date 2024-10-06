@@ -55,6 +55,30 @@ h6 {
     left:65%;
 }
 
-.form-container{
-    
+.form-container {
+    margin: 20px;
+}
+
+.input-label {
+    background-color: #ffffff; 
+    padding: 8px 8px;
+    border-radius: 10%;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: 2px solid #d4ecff;
+    color: #483966;
+    font-size: 3rem;
+    font-family: serif;
+    text-align: center;
+}
+
+.text-input {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid #d4ecff; 
+    border-radius: 5px; 
+    width: 45%;
+    color: #483966;
+    font-size: 2rem;
+    font-family: serif;
 }

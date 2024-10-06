@@ -7,6 +7,9 @@ h1{
     color: #d4ecff;
     font-family: serif;
     font-size: 7rem;
+    position:absolute;
+    bottom: 60%;
+    left:50%;
 }
 
 #btn3{
@@ -19,10 +22,4 @@ h1{
 .container{
     display: flex;
     justify-content: flex-start;
-    /* gap: 20px; */
-}
-
-.container2{
-    display: flex;
-    justify-content: center;
 }

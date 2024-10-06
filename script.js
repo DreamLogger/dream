@@ -13,12 +13,12 @@ var descriptionInput;
 //Input Variables
 
 
-document.querySelector("saveBtn").addEventListener("click",function(){
+saveBtn.onclick=function(){
     gatherInputs();
     saveEntry();
-    console.log(title,0)
-    console.log(type,0)
-});
+    console.log(title,0);
+    console.log(type,0);
+};
 
 function gatherInputs(){
     var titleInput=getText("titleInput");

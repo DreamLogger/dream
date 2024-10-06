@@ -21,19 +21,21 @@ h1{
 }
 
 #btn1{
-    margin-top: 2%;
+    margin-top: 18%;
     font-size: 4rem;
     color: #483966;
     background-color: white;
     border-radius: 10%;
+    border-width: 5px;
 }
 
 #btn2{
-    margin-top: 10%;
+    margin-top: 20px;
     font-size: 4rem;
     color: #483966;
     background-color: white;
     border-radius: 10%;
+    border-width: 5px;
 }
 
 .button-container {

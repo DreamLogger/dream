@@ -37,18 +37,16 @@ h1{
     border-width: 5px:
 }
 
-h6{
-    position:absolute;
+h6 {
+    position: absolute;
     bottom: 40%;
-    left:67%;
+    left: 67%;
     font-size: 3rem;
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px 20px;
     color: #483966;
-    background-color: #ffffff;
-    border-radius: 10%;
-    border-width: 5px solid;
-    border-color: #869cc6;
+    border-radius: 10%; 
+    border: 5px solid #869cc6; 
 }
 
 .container2{
@@ -59,8 +57,4 @@ h6{
 
 .form-container{
     
-}
-
-#drtitle{
-    color:#d4ecff;
 }

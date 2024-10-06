@@ -25,6 +25,7 @@ h1{
 }
 
 #btn1{
+    border-radius: 10%;
     color: #483966;
     font-family: serif;
     font-size: 5rem;
@@ -34,5 +35,4 @@ h1{
     background-color: white;
     border-color: #869cc6;
     border-width: 5px:
-    border-radius: 10%;
 }

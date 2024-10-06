@@ -6,7 +6,7 @@ body{
 h1{
     color: #d4ecff;
     position:absolute;
-    bottom: 60%;
+    bottom: 55%;
     left:50%;
     transform: translateX(-50%);
     font-family: serif;
@@ -21,7 +21,7 @@ h1{
 }
 
 #btn1{
-    margin-top: 18%;
+    margin-top: 16%;
     font-size: 4rem;
     color: #483966;
     background-color: white;

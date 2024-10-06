@@ -5,12 +5,9 @@ body{
 
 h1{
     color: #d4ecff;
-    position:absolute;
-    top:1%;
-    left:50%;
-    transform: translateX(-50%);
+    margin-left: 120px;
     font-family: serif;
-    font-size: 10rem;
+    font-size: 7rem;
 }
 
 #btn3{

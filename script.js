@@ -20,10 +20,10 @@ document.getElementById("saveBtn").addEventListener("click", function(){
 });
 
 function gatherInputs(){
-    var titleInput=getText("titleInput");
-    var typeInput=getText("typeInput");
-    var titleInput=getText("dateInput");
-    var titleInput=getText("descriptionInput");
+    var titleInput=document.getElementById("titleInput").textContent
+    var typeInput=document.getElementById("typeInput").textContent
+    var dateInput=document.getElementById("dateInput").textContent
+    var descriptionInput=document.getElementById("descriptionInput").textContent
 }
 
 function saveEntry(){

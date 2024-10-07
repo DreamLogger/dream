@@ -16,7 +16,7 @@ var descriptionInput;
 const saveBtn=document.getElementById("saveBtn")
 //Gather Document id
 
-saveBtn.addEventListener("click",function(){
+saveBtn.onclick(function(){
     gatherInputs();
     saveEntry();
     console.log(title,0);

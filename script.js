@@ -16,26 +16,27 @@ var descriptionInput;
 document.getElementById("saveBtn").addEventListener("click", function(){
     gatherInputs();
     saveEntry();
+    index=0;
     storeLocalData();
 });
 
 function gatherInputs(){
-    titleInput=document.getElementById("titleInput").textContent
-    typeInput=document.getElementById("typeInput").textContent
-    dateInput=document.getElementById("dateInput").textContent
-    descriptionInput=document.getElementById("descriptionInput").textContent
+    titleInput=document.getElementById("titleInput").textContent;
+    typeInput=document.getElementById("typeInput").textContent;
+    dateInput=document.getElementById("dateInput").textContent;
+    descriptionInput=document.getElementById("descriptionInput").textContent;
 }
 
 function saveEntry(){
-    title.push(titleInput)
-    type.push(typeInput)
-    date.push(dateInput)
-    description.push(descriptionInput)
+    title.push(titleInput);
+    type.push(typeInput);
+    date.push(dateInput);
+    description.push(descriptionInput);
 }
 
 function storeLocalData(){
-    localStorage.setItem("title"+index,title[index])
-    localStorage.setItem("type"+index,type[index])
-    localStorage.setItem("date"+index,date[index])
-    localStorage.setItem("description"+index,description[index])
+    localStorage.setItem("title"+index,title[index]);
+    localStorage.setItem("type"+index,type[index]);
+    localStorage.setItem("date"+index,date[index]);
+    localStorage.setItem("description"+index,description[index]);
 }

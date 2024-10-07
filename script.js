@@ -39,4 +39,5 @@ function storeLocalData(){
     localStorage.setItem("type"+index,type[index]);
     localStorage.setItem("date"+index,date[index]);
     localStorage.setItem("description"+index,description[index]);
+    console.log(title[index])
 }

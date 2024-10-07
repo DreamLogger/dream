@@ -21,7 +21,7 @@ document.getElementById("saveBtn").addEventListener("click", function(){
 });
 
 function gatherInputs(){
-    titleInput=document.getElementById("titleInput").textContent;
+    titleInput=document.getElementById("titleInput").innerText;
     typeInput=document.getElementById("typeInput").textContent;
     dateInput=document.getElementById("dateInput").textContent;
     descriptionInput=document.getElementById("descriptionInput").textContent;

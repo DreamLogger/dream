@@ -16,8 +16,7 @@ var descriptionInput;
 document.getElementById("saveBtn").addEventListener("click", function(){
     gatherInputs();
     saveEntry();
-    console.log(title,0);
-    console.log(type,0);
+    storeLocalData();
 });
 
 function gatherInputs(){

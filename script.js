@@ -36,6 +36,9 @@ function saveEntry(){
 
 function storeLocalData(){
     localStorage.setItem("title"+index,title[index])
+    localStorage.setItem("type"+index,type[index])
+    localStorage.setItem("date"+index,date[index])
+    localStorage.setItem("description"+index,description[index])
 }
 
 

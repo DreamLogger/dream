@@ -7,9 +7,8 @@ h1{
     color: #d4ecff;
     font-family: serif;
     font-size: 7rem;
-    position:absolute;
-    bottom: 66%;
-    left:10%;
+	margin: 0;
+	margin-right: 30px;
 }
 
 #btn3{
@@ -17,11 +16,14 @@ h1{
     color: #d4ecff;
     background-color: transparent;
     border-color: transparent;
+	margin: 0;
 }
 
 .container{
     display: flex;
     justify-content: flex-start;
+    align-items: center; 
+    flex-direction: row;
 }
 
 #saveBtn{
@@ -132,4 +134,10 @@ h6 {
     left: 3px;
     font-size: 12px;
     color: white;
+}
+
+textarea{
+    resize: none;
+    border: 5px solid #869cc6;
+    border-radius: 5px;
 }

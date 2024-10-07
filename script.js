@@ -28,10 +28,10 @@ function gatherInputs(){
 }
 
 function saveEntry(){
-    appendItem(title,titleInput);
-    appendItem(type,typeInput);
-    appendItem(date,dateInput);
-    appendItem(description,descriptionInput);
+    title.push(titleInput)
+    type.push(typeInput)
+    date.push(dateInput)
+    description.push(descriptionInput)
 }
 
 function storeLocalData(){
@@ -40,5 +40,3 @@ function storeLocalData(){
     localStorage.setItem("date"+index,date[index])
     localStorage.setItem("description"+index,description[index])
 }
-
-

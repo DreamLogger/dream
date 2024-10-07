@@ -1,4 +1,5 @@
 //Arrays
+var index=[];
 var title=[];
 var type=[];
 var date=[];
@@ -34,7 +35,7 @@ function saveEntry(){
 }
 
 function storeLocalData(){
-
+    localStorage.setItem("title"+index,title[index])
 }
 
 

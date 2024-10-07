@@ -28,10 +28,10 @@ function gatherInputs(){
 }
 
 function saveEntry(){
-    appenditem(title,titleInput);
-    appenditem(type,typeInput);
-    appenditem(date,dateInput);
-    appenditem(description,descriptionInput);
+    appendItem(title,titleInput);
+    appendItem(type,typeInput);
+    appendItem(date,dateInput);
+    appendItem(description,descriptionInput);
 }
 
 function storeLocalData(){

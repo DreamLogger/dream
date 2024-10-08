@@ -73,6 +73,6 @@ function pullIndex(){
     dreamIndex=localStorage.getItem("dreamIndex") 
     if(dreamIndex="null"){
         dreamIndex=0
-        localStorage.setItem("dreamIndex")
+        localStorage.setItem(dreamIndex)
     }
 }

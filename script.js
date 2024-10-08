@@ -13,7 +13,7 @@ var descriptionInput;
 //Input Variables
 
 //Logic Variables
-var index;
+var dreamIndex;
 //Logic Variables
 
 document.getElementById("saveBtn").addEventListener("click", function(){
@@ -37,19 +37,21 @@ function pushEntry(){
 }
 
 function deleteEntry(){
-    title.splice(index);
-    type.splice(index);
-    date.splice(index);
-    description.splice(index);
+    title.splice(dreamIndex);
+    type.splice(dreamIndex);
+    date.splice(dreamIndex);
+    description.splice(dreamIndex);
+    dreamIndex--;
+    localStorage.setItem("dreamIndex",dreamIndex);
 }
 
 function pullLocalData(){
-    var currentLength=title.length;
-    title.splice(0,title.length);
-    type.splice(0,type.length);
-    date.splice(0,date.length);
-    description.splice(0,description.length);
-    for (let i=0;i<currentLength;i++) {
+    pullIndex();
+    title.splice(0,dreamIndex+1);
+    type.splice(0,dreamIndex+1);
+    date.splice(0,dreamIndex+1);
+    description.splice(0,dreamIndex+1);
+    for (let i=0;i<dreamIndex+1;i++) {
         title.push(localStorage.getItem("title"+i));
         type.push(localStorage.getItem("type"+i));
         date.push(localStorage.getItem("date"+i));
@@ -58,9 +60,19 @@ function pullLocalData(){
 }
 
 function storeLocalData(){
-    localStorage.setItem("title"+index,title[index]);
-    localStorage.setItem("type"+index,type[index]);
-    localStorage.setItem("date"+index,date[index]);
-    localStorage.setItem("description"+index,description[index]);
-    index++;
+    pullIndex();
+    localStorage.setItem("title"+dreamIndex,title[dreamIndex]);
+    localStorage.setItem("type"+dreamIndex,type[dreamIndex]);
+    localStorage.setItem("date"+dreamIndex,date[dreamIndex]);
+    localStorage.setItem("description"+dreamIndex,description[dreamIndex]);
+    localStorage.setItem("dreamIndex",dreamIndex)
+    dreamIndex++;
+}
+
+function pullIndex(){
+    dreamIndex=localStorage.getItem("dreamIndex") 
+    if(dreamIndex="null"){
+        dreamIndex=0
+        localStorage.setItem("dreamIndex")
+    }
 }

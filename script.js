@@ -30,10 +30,13 @@ function gatherInputs(){
 }
 
 function pushEntry(){
+    pullLocalData();
     title.push(titleInput);
     type.push(typeInput);
     date.push(dateInput);
     description.push(descriptionInput);
+    dreamIndex++;
+    localStorage.setItem("currentDreamIndex",dreamIndex);
 }
 
 function deleteEntry(){
@@ -42,38 +45,41 @@ function deleteEntry(){
     date.splice(dreamIndex);
     description.splice(dreamIndex);
     dreamIndex--;
-    localStorage.setItem("dreamIndex",dreamIndex);
+    localStorage.setItem("currentDreamIndex",dreamIndex); 
 }
 
 function pullLocalData(){
-    pullDreamIndex();
-    title.splice(0,dreamIndex+1);
-    type.splice(0,dreamIndex+1);
-    date.splice(0,dreamIndex+1);
-    description.splice(0,dreamIndex+1);
-    for (let i=0;i<dreamIndex+1;i++) {
-        title.push(localStorage.getItem("title"+i));
-        type.push(localStorage.getItem("type"+i));
-        date.push(localStorage.getItem("date"+i));
-        description.push(localStorage.getItem("description"+i));
+    if(isNaN(localStorage.getItem("currentDreamIndex"))){}else{
+        pullDreamIndex();
+        title.splice(0,title.length);
+        type.splice(0,type.length);
+        date.splice(0,date.length);
+        description.splice(0,description.length);
+        for (let i=0;i<dreamIndex+1;i++) {
+            title.push(localStorage.getItem("title"+i));
+            type.push(localStorage.getItem("type"+i));
+            date.push(localStorage.getItem("date"+i));
+            description.push(localStorage.getItem("description"+i));
+        }
     }
-    dreamIndex++;
-    localStorage.setItem("dreamIndex",dreamIndex)
 }
 
 function storeLocalData(){
     pullDreamIndex();
-    localStorage.setItem("title"+dreamIndex,title[dreamIndex]);
-    localStorage.setItem("type"+dreamIndex,type[dreamIndex]);
-    localStorage.setItem("date"+dreamIndex,date[dreamIndex]);
-    localStorage.setItem("description"+dreamIndex,description[dreamIndex]);
-    localStorage.setItem("dreamIndex",dreamIndex)
+    localStorage.clear;
+    for (let i=0;i<dreamIndex+1;i++) {
+        localStorage.setItem("title"+i,title[i]);
+        localStorage.setItem("type"+i,type[i]);
+        localStorage.setItem("date"+i,date[i]);
+        localStorage.setItem("description"+i,description[i]);
+        localStorage.setItem("currentDreamIndex",dreamIndex);
+    }
 }
 
 function pullDreamIndex(){
-    dreamIndex=localStorage.getItem("dreamIndex") 
-    if(dreamIndex="null"){
-        dreamIndex=0
-        localStorage.setItem("dreamIndex")
+    dreamIndex=localStorage.getItem("currentDreamIndex");
+    if(isNaN(dreamIndex)){
+        dreamIndex=0;
+        localStorage.setItem("currentDreamIndex");
     }
 }

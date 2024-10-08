@@ -46,7 +46,7 @@ function deleteEntry(){
 }
 
 function pullLocalData(){
-    pullIndex();
+    pullDreamIndex();
     title.splice(0,dreamIndex+1);
     type.splice(0,dreamIndex+1);
     date.splice(0,dreamIndex+1);
@@ -57,22 +57,23 @@ function pullLocalData(){
         date.push(localStorage.getItem("date"+i));
         description.push(localStorage.getItem("description"+i));
     }
+    dreamIndex++;
+    localStorage.setItem("dreamIndex",dreamIndex)
 }
 
 function storeLocalData(){
-    pullIndex();
+    pullDreamIndex();
     localStorage.setItem("title"+dreamIndex,title[dreamIndex]);
     localStorage.setItem("type"+dreamIndex,type[dreamIndex]);
     localStorage.setItem("date"+dreamIndex,date[dreamIndex]);
     localStorage.setItem("description"+dreamIndex,description[dreamIndex]);
     localStorage.setItem("dreamIndex",dreamIndex)
-    dreamIndex++;
 }
 
-function pullIndex(){
+function pullDreamIndex(){
     dreamIndex=localStorage.getItem("dreamIndex") 
     if(dreamIndex="null"){
         dreamIndex=0
-        localStorage.setItem("dreamIndex",0)
+        localStorage.setItem("dreamIndex")
     }
 }

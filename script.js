@@ -50,8 +50,7 @@ function deleteEntry(){
 
 function pullLocalData(){
     pullDreamIndex();
-    if(dreamIndex="null"){
-    }else{
+    if(dreamIndex!="null"){
         title.splice(0,title.length);
         type.splice(0,type.length);
         date.splice(0,date.length);

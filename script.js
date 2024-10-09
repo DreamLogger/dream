@@ -77,7 +77,7 @@ function storeLocalData(){
 
 function pullDreamIndex(){
     dreamIndex=localStorage.getItem("currentDreamIndex");
-    if(dreamIndex=="null"){
+    if(isNaN(dreamIndex)){
         dreamIndex=0;
         localStorage.setItem("currentDreamIndex",dreamIndex);
     }

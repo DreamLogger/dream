@@ -50,7 +50,8 @@ function deleteEntry(){
 
 function pullLocalData(){
     pullDreamIndex();
-    if(dreamIndex.value="null"){}else{
+    if(dreamIndex="null"){
+    }else{
         title.splice(0,title.length);
         type.splice(0,type.length);
         date.splice(0,date.length);
@@ -79,7 +80,7 @@ function storeLocalData(){
 
 function pullDreamIndex(){
     dreamIndex=localStorage.getItem("currentDreamIndex");
-    if(dreamIndex.value="null"){
+    if(dreamIndex="null"){
         dreamIndex=0;
         localStorage.setItem("currentDreamIndex",dreamIndex);
     }

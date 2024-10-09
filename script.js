@@ -50,17 +50,15 @@ function deleteEntry(){
 
 function pullLocalData(){
     pullDreamIndex();
-    if(dreamIndex!="null"){
-        title.splice(0,title.length);
-        type.splice(0,type.length);
-        date.splice(0,date.length);
-        description.splice(0,description.length);
-        for (let i=0;i<dreamIndex+1;i++) {
-            title.push(localStorage.getItem("title"+i));
-            type.push(localStorage.getItem("type"+i));
-            date.push(localStorage.getItem("date"+i));
-            description.push(localStorage.getItem("description"+i));
-        }
+    title.splice(0,title.length);
+    type.splice(0,type.length);
+    date.splice(0,date.length);
+    description.splice(0,description.length);
+    for (let i=0;i<dreamIndex+1;i++) {
+        title.push(localStorage.getItem("title"+i));
+        type.push(localStorage.getItem("type"+i));
+        date.push(localStorage.getItem("date"+i));
+        description.push(localStorage.getItem("description"+i));
     }
 }
 
@@ -79,7 +77,7 @@ function storeLocalData(){
 
 function pullDreamIndex(){
     dreamIndex=localStorage.getItem("currentDreamIndex");
-    if(dreamIndex="null"){
+    if(dreamIndex=="null"){
         dreamIndex=0;
         localStorage.setItem("currentDreamIndex",dreamIndex);
     }

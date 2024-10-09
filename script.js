@@ -49,8 +49,8 @@ function deleteEntry(){
 }
 
 function pullLocalData(){
-    if(isNaN(localStorage.getItem("currentDreamIndex"))){}else{
-        pullDreamIndex();
+    pullDreamIndex();
+    if(dreamIndex="null"){}else{
         title.splice(0,title.length);
         type.splice(0,type.length);
         date.splice(0,date.length);

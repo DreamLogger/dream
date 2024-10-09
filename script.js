@@ -67,7 +67,8 @@ function pullLocalData(){
 function storeLocalData(){
     pullDreamIndex();
     localStorage.clear;
-    for (let i=0;i<dreamIndex+1;i++) {
+    var currentLength = dreamIndex+1
+    for (let i=0;i<currentLength;i++) {
         localStorage.setItem("title"+i,title[i]);
         localStorage.setItem("type"+i,type[i]);
         localStorage.setItem("date"+i,date[i]);
@@ -78,7 +79,7 @@ function storeLocalData(){
 
 function pullDreamIndex(){
     dreamIndex=localStorage.getItem("currentDreamIndex");
-    if(isNaN(dreamIndex)){
+    if(dreamIndex="null"){
         dreamIndex=0;
         localStorage.setItem("currentDreamIndex");
     }

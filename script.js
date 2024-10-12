@@ -75,6 +75,9 @@ function storeLocalData(){
     }
 }
 
+<<<<<<< HEAD
+
+=======
 function pullDreamIndex(){
     dreamIndex=localStorage.getItem("currentDreamIndex").value;
     if(dreamIndex==null){
@@ -82,3 +85,5 @@ function pullDreamIndex(){
         localStorage.setItem("currentDreamIndex",dreamIndex);
     }
 }
+
+>>>>>>> 82a02856cd5a377a68f1488cf16d04aebc8851de

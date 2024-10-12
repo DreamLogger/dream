@@ -49,16 +49,18 @@ function deleteEntry(){
 }
 
 function pullLocalData(){
-    pullDreamIndex();
-    title.splice(0,title.length);
-    type.splice(0,type.length);
-    date.splice(0,date.length);
-    description.splice(0,description.length);
-    for (let i=0;i<dreamIndex+1;i++) {
-        title.push(localStorage.getItem("title"+i));
-        type.push(localStorage.getItem("type"+i));
-        date.push(localStorage.getItem("date"+i));
-        description.push(localStorage.getItem("description"+i));
+    if(localStorage.getItem("title0")!=null){
+        pullDreamIndex();
+        title.splice(0,title.length);
+        type.splice(0,type.length);
+        date.splice(0,date.length);
+        description.splice(0,description.length);
+        for (let i=0;i<dreamIndex+1;i++) {
+            title.push(localStorage.getItem("title"+i));
+            type.push(localStorage.getItem("type"+i));
+            date.push(localStorage.getItem("date"+i));
+            description.push(localStorage.getItem("description"+i));
+        }
     }
 }
 

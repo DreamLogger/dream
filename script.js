@@ -49,8 +49,8 @@ function deleteEntry(){
 }
 
 function pullLocalData(){
-    if(localStorage.getItem("title0")!=null){
         pullDreamIndex();
+        if(localStorage.getItem("title0")!=null){
         title.splice(0,title.length);
         type.splice(0,type.length);
         date.splice(0,date.length);
@@ -78,9 +78,9 @@ function storeLocalData(){
 }
 
 function pullDreamIndex(){
-    dreamIndex=localStorage.getItem("currentDreamIndex").number;
+    dreamIndex=localStorage.getItem("currentDreamIndex").value;
     if(dreamIndex==null){
         dreamIndex=0;
-        localStorage.setItem("currentDreamIndex",dreamIndex).number;
+        localStorage.setItem("currentDreamIndex",dreamIndex);
     }
 }

@@ -18,6 +18,7 @@ var dreamIndex;
 
 document.getElementById("saveBtn").addEventListener("click", function(){
     gatherInputs();
+    pullLocalData();
     pushEntry();
     storeLocalData();
 });
@@ -30,7 +31,6 @@ function gatherInputs(){
 }
 
 function pushEntry(){
-    pullLocalData();
     title.push(titleInput);
     type.push(typeInput);
     date.push(dateInput);
@@ -79,7 +79,7 @@ function storeLocalData(){
 function pullDreamIndex(){
     dreamIndex=localStorage.getItem("currentDreamIndex").number;
     if(dreamIndex==null){
-        dreamIndex=0;
+        dreamIndex=-1;
         localStorage.setItem("currentDreamIndex",dreamIndex);
     }
 }

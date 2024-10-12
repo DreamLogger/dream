@@ -72,12 +72,12 @@ function storeLocalData(){
         localStorage.setItem("type"+i,type[i]);
         localStorage.setItem("date"+i,date[i]);
         localStorage.setItem("description"+i,description[i]);
-        localStorage.setItem("currentDreamIndex",dreamIndex);
     }
+    localStorage.setItem("currentDreamIndex",dreamIndex);
 }
 
 function pullDreamIndex(){
-    dreamIndex=localStorage.getItem("currentDreamIndex");
+    dreamIndex=localStorage.getItem("currentDreamIndex").number;
     if(dreamIndex==null){
         dreamIndex=0;
         localStorage.setItem("currentDreamIndex",dreamIndex);

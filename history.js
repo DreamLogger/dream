@@ -46,12 +46,12 @@ document.getElementById("decreaseIndexBtn").addEventListener("click", function()
         }else{
             decreaseAmmount=currentLow
         }
-        for (let i=4;i>0;i--) {
-            document.getElementById("titleOutput"+i).setAttribute("label",localStorage.getItem("title"+(currentLow-decreaseAmmount+i-4)));
-            document.getElementById("typeOutput"+i).setAttribute("label",localStorage.getItem("type"+(currentLow-decreaseAmmount+i-4)));
-            document.getElementById("dateOutput"+i).setAttribute("label",localStorage.getItem("date"+(currentLow-decreaseAmmount+i-4)));
-            document.getElementById("favoriteOutput"+i).setAttribute("label",localStorage.getItem("favorite"+(currentLow-decreaseAmmount+i-4)));
-            document.getElementById("descriptionOutput"+i).setAttribute("label",localStorage.getItem("description"+(currentLow-decreaseAmmount+i-4)));
+        for (let i=4;i>-1;i--) {
+            document.getElementById("titleOutput"+i).setAttribute("label",localStorage.getItem("title"+(currentLow-decreaseAmmount-i+4)));
+            document.getElementById("typeOutput"+i).setAttribute("label",localStorage.getItem("type"+(currentLow-decreaseAmmount-i+4)));
+            document.getElementById("dateOutput"+i).setAttribute("label",localStorage.getItem("date"+(currentLow-decreaseAmmount-i+4)));
+            document.getElementById("favoriteOutput"+i).setAttribute("label",localStorage.getItem("favorite"+(currentLow-decreaseAmmount-i+4)));
+            document.getElementById("descriptionOutput"+i).setAttribute("label",localStorage.getItem("description"+(currentLow-decreaseAmmount-i+4)));
         }
         currentHigh=currentHigh-decreaseAmmount
         currentLow=currentLow-decreaseAmmount

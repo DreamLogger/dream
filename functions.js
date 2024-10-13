@@ -1,23 +1,23 @@
-//Arrays
+//Arrays//
 let title=[];
 let type=[];
 let date=[];
 let favorite=[];
 let description=[];
-//Arrays
+//Arrays//
 
-//Input variables
+//Input variables//
 let titleInput;
 let typeInput;
 let dateInput;
 let favoriteInput;
 let descriptionInput;
-//Input variables
+//Input variables//
 
-//Logic variables
+//Logic variables//
 let dreamIndex;
 let chosenIndex;
-//Logic variables
+//Logic variables//
 
 function gatherInputs(){
     titleInput=document.getElementById("titleInput").value;

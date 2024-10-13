@@ -17,8 +17,8 @@ var dreamIndex;
 //Logic Variables
 
 document.getElementById("saveBtn").addEventListener("click", function(){
-    gatherInputs();
     pullLocalData();
+    gatherInputs();
     pushEntry();
     storeLocalData();
 });

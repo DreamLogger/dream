@@ -1,42 +1,62 @@
 <html> 
     <head>
-        <link rel="stylesheet" href="stylelog.css">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="stylehistory.css">
     </head>
     <body>
         <div class="container">
             <a href="index.html">
-                <button id="btn3">X</button>
+                <button id="exitBtn">
+					<img src="backarrow.png" alt="backarrowpng" />
+				</button>
             </a>
-            <h1>Dream</h1>
+				<h1>Dream</h1>
         </div>
 
-            <form>
-            <div class="form-container">
-                <label for="titleInput" class="input-label">Title:</label>
-                <input type="text" id="titleInput" class="text-input" name="titleInput">
-            </div>
-                <br>
-            <div class="form-container">
+		<div class="input-overlay-title">
+			<form>
+				<label for="titleInput" class="input-label">Title:</label>
+					<br>
+				<input type="text" id="titleInput" class="text-input" name="titleInput">
+			</form>
+		</div>
+		
+		<div class="input-overlay-type">
+			<form>
                 <label for="typeInput" class="input-label">Type:</label>
+					<br>
                 <input type="text" id="typeInput" class="text-input" name="typeInput" placeholder="Regular, Lucid, Nightmare...">
-            </div>
-            <br>
-            <div class="form-container">
+			</form>
+		</div>
+		
+		<div class="input-overlay-date">
+			<form>
                 <label for="dateInput" class="date-label">Date:</label>
+				<br>
                 <input type="date" id="dateInput" class="custom-date" name="dateInput">
-                <label for="favoriteInput" class="input-label">Favorite?:</label>
+			</form>
+		</div>
+		
+		<div class="input-overlay-favorite">
+			<form>
+                <label for="favoriteInput" class="favorite-label">Favorite?:</label>
+				<br>
                 <input type="checkbox" id="favoriteInput" class="custom-checkbox" name="favoriteInput">
-            </div>
-            </form>
+			</form>
+		</div>
 
-            <h6>Description</h6>
 
-            <div class="textarea-container">
-            <textarea rows="20" cols="40" id="descriptionInput"></textarea>
-            </div>
+        <div class="square">
+            <div class="itemback"></div>
+        </div>
+		
+			<h6>Description</h6>
 
-            <button id="saveBtn">Save?</button>
-
-        <script src="script.js"></script>
+         <div class="textarea-container">
+				<textarea rows="15" cols="45" id="descriptionInput"></textarea>
+        </div>
+		
+			<button id="saveBtn">Save?</button>
+		<script src="script.js"></script>
     </body>
 </html>

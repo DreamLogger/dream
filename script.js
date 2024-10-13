@@ -29,7 +29,7 @@ function gatherInputs(){
     titleInput=document.getElementById("titleInput").value;
     typeInput=document.getElementById("typeInput").value;
     dateInput=document.getElementById("dateInput").value;
-    favoriteInput=document.getElementById("favoriteInput").value;
+    favoriteInput=document.getElementById("favoriteInput").checked;
     descriptionInput=document.getElementById("descriptionInput").value;
 }
 

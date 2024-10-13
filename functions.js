@@ -1,22 +1,23 @@
 //Arrays
-var title=[];
-var type=[];
-var date=[];
-var favorite=[];
-var description=[];
+let title=[];
+let type=[];
+let date=[];
+let favorite=[];
+let description=[];
 //Arrays
 
-//Input Variables
-var titleInput;
-var typeInput;
-var dateInput;
-var favoriteInput;
-var descriptionInput;
-//Input Variables
+//Input variables
+let titleInput;
+let typeInput;
+let dateInput;
+let favoriteInput;
+let descriptionInput;
+//Input variables
 
-//Logic Variables
-var dreamIndex;
-//Logic Variables
+//Logic variables
+let dreamIndex;
+let chosenIndex;
+//Logic variables
 
 function gatherInputs(){
     titleInput=document.getElementById("titleInput").value;

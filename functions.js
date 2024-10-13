@@ -49,12 +49,12 @@ function deleteEntry(){
 
 function pullLocalData(){
         pullDreamIndex();
-        if(localStorage.getItem("title0")!=null){
         title.splice(0,title.length);
         type.splice(0,type.length);
         date.splice(0,date.length);
         favorite.splice(0,favorite.length);
         description.splice(0,description.length);
+        if(localStorage.getItem("title0")!=null){
         for (let i=0;i<dreamIndex+1;i++) {
             title.push(localStorage.getItem("title"+i));
             type.push(localStorage.getItem("type"+i));

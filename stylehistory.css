@@ -10,7 +10,7 @@ h1{
     left:50%;
     transform: translateX(-50%);
     font-family: serif;
-    font-size: 10rem;
+    font-size: 1000%;
 }
 
 img{
@@ -77,7 +77,7 @@ img{
 
 .dropdown button{
 	background-color: white;
-	color: #778db9;
+	color: #483966;
 	border: 2px solid #869cc6;
 	border-radius: 5px;
 	padding: 10px 15px;
@@ -106,5 +106,42 @@ img{
 }
 
 .radiolabelcontainer{
-	color: #778db9;
+	color: #483966;
+}
+
+.squaretitleOutput1{
+	font-family: serif;
+	position: absolute;
+	z-index: 1;
+	color: #483966;
+	margin-left: 12%;
+}
+
+#titleOutput1{
+	color: #483966;
+	font-size: 1vw;
+	resize: none;
+	width: 11vw;
+	background-color: transparent;
+    border-color: transparent;
+	
+}
+
+#dateOutput1{
+	color: #483966;
+	resize: none;
+	width: 11vw;
+	font-size: 1vw;
+	background-color: transparent;
+    border-color: transparent;
+}
+
+#descriptionOutput1{
+	color: #483966;
+	resize: none;
+	width: 11vw;
+	height: 37vh;
+	font-size: 1vw;
+	background-color: transparent;
+    border-color: transparent;
 }

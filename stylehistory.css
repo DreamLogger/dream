@@ -6,10 +6,105 @@ body{
 h1{
     color: #d4ecff;
     position:absolute;
-    top:1%;
+    bottom:55%;
     left:50%;
     transform: translateX(-50%);
     font-family: serif;
     font-size: 10rem;
 }
 
+img{
+	width: 100px;
+	height: 100px;
+}
+
+.container{
+	display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    flex-direction: row;
+}
+
+#historyexitBtn{
+	color: #d4ecff;
+    background-color: transparent;
+    border-color: transparent;
+	margin: 0;
+}
+
+#rightarrowBtn{
+    background-color: transparent;
+    border-color: transparent;
+	margin: 0;	
+	transform: rotate(180deg);
+}
+
+#leftarrowBtn{
+    background-color: transparent;
+    border-color: transparent;
+	margin: 0;	
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 10%;
+    padding: 0 50px; 
+}
+
+.historysquarecontainer{
+	display: flex;
+    justify-content: space-around; 
+    flex-grow: 1; 
+    margin: 0 20px;
+}
+
+.historysquare{
+    width: 150px;
+    height: 300px;
+    background-color: white;
+	border: 5px solid #869cc6;
+	border-radius: 5px;
+}
+
+.dropdown{
+	display: inline-block;
+	position: absolute;
+	top: 10%;
+	right:20%;
+}
+
+.dropdown button{
+	background-color: white;
+	color: #778db9;
+	border: 2px solid #869cc6;
+	border-radius: 5px;
+	padding: 10px 15px;
+	cursor: pointer;
+	
+}
+
+.dropdown .dropdown-content{
+	display: none;
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 100px;
+	border: 2px solid #869cc6;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.7);
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+	
+}
+
+.dropdown:hover button{
+	background-color: hsl(0, 0%, 95%);
+}
+
+.radiolabelcontainer{
+	color: #778db9;
+}

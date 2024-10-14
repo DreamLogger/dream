@@ -3,9 +3,49 @@
         <link rel="stylesheet" href="stylehistory.css">
     </head>
     <body>
+		
+		<h1>History</h1>
+		
+        <div class="container">
+           <a href="index.html">
+            <button id="historyexitBtn">
+					<img src="backarrow.png" alt="backarrowpng" />
+			</button>
+			</a>
+		</div>
+		
+		<div class="button-container">
+			<button id="leftarrowBtn">
+				<img src="directionarrow.png" alt="directionarrowpng" />
+			</button>
+		
 
-                <h1>History</h1>
+		
+		<div class="historysquarecontainer">
+			<div class="historysquare1 historysquare"></div>
+			<div class="historysquare2 historysquare"></div>
+			<div class="historysquare3 historysquare"></div>
+			<div class="historysquare4 historysquare"></div>
+			<div class="historysquare5 historysquare"></div>
+		</div>
+		
+			<button id="rightarrowBtn">
+				<img src="directionarrow.png" alt="directionarrowpng" />
+			</button>        
+		</div>
+			
+		<div class="dropdown">
+			<button class="dropbtn">Sort By ></button>
+				<div class="dropdown-content">
+					<input type="radio" id="Newest" class="radiocontainer" name="sortingby" value="newest">
+					<label for="Newest" class="radiolabelcontainer">Newest</label><br>
+					<input type="radio" id="Oldest" class="radiocontainer" name="sortingby" value="oldest">
+					<label for="Oldest" class="radiolabelcontainer">Oldest</label><br>
+					<input type="radio" id="Favorite" class="radiocontainer" name="sortingby" value="favorite">
+					<label for="Favorite" class="radiolabelcontainer">Favorite</label>
+				</div>
+		</div>
         
-    <script src="history.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>

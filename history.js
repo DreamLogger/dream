@@ -1,10 +1,11 @@
 
+pullDreamIndex();
+
 let currentHigh=dreamIndex;
 let currentLow=dreamIndex-5;
 let initialDreamOutputs;
 let matrix=[];
 
-pullDreamIndex();
 constructMatrix();
 function constructMatrix(){
     let matrixTitle=[];

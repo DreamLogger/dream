@@ -34,11 +34,11 @@ function initializeHistory(){
         initialDreamOutputs=dreamIndex+1;
     }
     for (let i=0;i<initialDreamOutputs;i++) {
-        document.getElementById("titleOutput"+i).setAttribute("value",localStorage.getItem("title"+(dreamIndex-i)));
-        //document.getElementById("typeOutput"+i).setAttribute("value",localStorage.getItem("type"+(dreamIndex-i)));
-        document.getElementById("dateOutput"+i).setAttribute("value",localStorage.getItem("date"+(dreamIndex-i)));
+        document.getElementById("titleOutput"+i).value = matrix[0][dreamIndex-i];
+        //document.getElementById("typeOutput"+i)value = matrix[1][dreamIndex-i];
+        document.getElementById("dateOutput"+i).value = matrix[2][dreamIndex-i];
         //document.getElementById("favoriteOutput"+i).setAttribute("value",localStorage.getItem("favorite"+(dreamIndex-i)));
-        document.getElementById("descriptionOutput"+i).setAttribute("value",localStorage.getItem("description"+(dreamIndex-i)));
+        document.getElementById("descriptionOutput"+i).value = matrix[4][dreamIndex-i];
     }
 }
 

@@ -25,6 +25,8 @@ matrix.push(matrixType);
 matrix.push(matrixDate);
 matrix.push(matrixFavorite);
 matrix.push(matrixDescription);
+
+matrix[2].sort((a,b)=> Date(a)- Date(b))
 }
 
 initializeHistory();

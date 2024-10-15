@@ -29,7 +29,7 @@ matrix.push(matrixDate);
 matrix.push(matrixFavorite);
 matrix.push(matrixDescription);
 
-matrix.at(2).sort((a,b)=> Date(a)- Date(b))
+matrix.at(3).sort((a,b)=> Date(a)- Date(b))
 }
 
 initializeHistory();

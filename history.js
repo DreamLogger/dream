@@ -51,11 +51,11 @@ document.getElementById("increaseIndexBtn").addEventListener("click", function()
             increaseAmmount=dreamIndex-currentHigh
         }
         for (let i=0;i<5;i++) {
-            document.getElementById("titleOutput"+i).setAttribute("value",localStorage.getItem("title"+(currentHigh+increaseAmmount-i)));
-            //document.getElementById("typeOutput"+i).setAttribute("value",localStorage.getItem("type"+(currentHigh+increaseAmmount-i)));
-            document.getElementById("dateOutput"+i).setAttribute("value",localStorage.getItem("date"+(currentHigh+increaseAmmount-i)));
+            document.getElementById("titleOutput"+i).value = matrix[0][currentHigh+increaseAmmount-i];
+            //document.getElementById("typeOutput"+i).value = matrix[1][currentHigh+increaseAmmount-i];
+            document.getElementById("dateOutput"+i).value = matrix[2][currentHigh+increaseAmmount-i];
            // document.getElementById("favoriteOutput"+i).setAttribute("value",localStorage.getItem("favorite"+(currentHigh+increaseAmmount-i)));
-            document.getElementById("descriptionOutput"+i).setAttribute("value",localStorage.getItem("description"+(currentHigh+increaseAmmount-i)));
+            document.getElementById("descriptionOutput"+i).value = matrix[4][currentHigh+increaseAmmount-i];
         }
         currentHigh=currentHigh+increaseAmmount
         currentLow=currentLow+increaseAmmount
@@ -71,11 +71,11 @@ document.getElementById("decreaseIndexBtn").addEventListener("click", function()
             decreaseAmmount=currentLow
         }
         for (let i=4;i>-1;i--) {
-            document.getElementById("titleOutput"+i).setAttribute("value",localStorage.getItem("title"+(currentLow-decreaseAmmount-i+4)));
-            //document.getElementById("typeOutput"+i).setAttribute("value",localStorage.getItem("type"+(currentLow-decreaseAmmount-i+4)));
-            document.getElementById("dateOutput"+i).setAttribute("value",localStorage.getItem("date"+(currentLow-decreaseAmmount-i+4)));
+            document.getElementById("titleOutput"+i).value = matrix[0][currentLow-decreaseAmmount-i+4];
+            //document.getElementById("typeOutput"+i).value = matrix[1][currentLow-decreaseAmmount-i+4];
+            document.getElementById("dateOutput"+i).value = matrix[2][currentLow-decreaseAmmount-i+4];
             //document.getElementById("favoriteOutput"+i).setAttribute("value",localStorage.getItem("favorite"+(currentLow-decreaseAmmount-i+4)));
-            document.getElementById("descriptionOutput"+i).setAttribute("value",localStorage.getItem("description"+(currentLow-decreaseAmmount-i+4)));
+            document.getElementById("descriptionOutput"+i).value = matrix[4][currentLow-decreaseAmmount-i+4];
         }
         currentHigh=currentHigh-decreaseAmmount
         currentLow=currentLow-decreaseAmmount

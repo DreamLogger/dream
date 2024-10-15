@@ -46,8 +46,8 @@ function initializeHistory(){
 document.getElementById("increaseIndexBtn").addEventListener("click", function(){
     if(dreamIndex>=5){
         let increaseAmmount;
-        if(dreamIndex-currentHigh>=5){
-            increaseAmmount=5
+        if(dreamIndex-currentHigh>=4){
+            increaseAmmount=4
         }else{
             increaseAmmount=dreamIndex-currentHigh
         }
@@ -66,8 +66,8 @@ document.getElementById("increaseIndexBtn").addEventListener("click", function()
 document.getElementById("decreaseIndexBtn").addEventListener("click", function(){
     if(dreamIndex>=5){
         let decreaseAmmount;
-        if(currentLow>=5){
-            decreaseAmmount=5
+        if(currentLow>=4){
+            decreaseAmmount=4
         }else{
             decreaseAmmount=currentLow
         }

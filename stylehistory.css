@@ -109,10 +109,42 @@ img{
 	color: #483966;
 }
 
+.squaretitleOutput0{
+	font-family: serif;
+	position: absolute;
+	z-index: 2;
+	color: #483966;
+	margin-left: 12%;
+}
+
 .squaretitleOutput1{
 	font-family: serif;
 	position: absolute;
-	z-index: 1;
+	z-index: 3;
+	color: #483966;
+	margin-left: 12%;
+}
+
+.squaretitleOutput2{
+	font-family: serif;
+	position: absolute;
+	z-index: 4;
+	color: #483966;
+	margin-left: 12%;
+}
+
+.squaretitleOutput3{
+	font-family: serif;
+	position: absolute;
+	z-index: 5;
+	color: #483966;
+	margin-left: 12%;
+}
+
+.squaretitleOutput4{
+	font-family: serif;
+	position: absolute;
+	z-index: 6;
 	color: #483966;
 	margin-left: 12%;
 }

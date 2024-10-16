@@ -9,6 +9,7 @@ let matrix=[];
 
 constructMatrix();
 function constructMatrix(){
+    matrix=[];
     let matrixIndex=[];
     let matrixTitle=[];
     let matrixType=[];

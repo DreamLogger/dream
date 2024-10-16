@@ -32,14 +32,14 @@ img{
 	margin: 0;
 }
 
-#decreaseIndexBtn{
+#increaseIndexBtn{
     background-color: transparent;
     border-color: transparent;
 	margin: 0;	
 	transform: rotate(180deg);
 }
 
-#increaseIndexBtn{
+#decreaseIndexBtn{
     background-color: transparent;
     border-color: transparent;
 	margin: 0;	

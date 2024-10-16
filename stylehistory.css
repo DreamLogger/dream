@@ -117,7 +117,7 @@ img{
 	margin-left: 12%;
 }
 
-#titleOutput1{
+#titleOutput0, #titleOutput1, #titleOutput2, #titleOutput3, #titleOutput4{
 	color: #483966;
 	font-size: 1vw;
 	resize: none;
@@ -127,7 +127,7 @@ img{
 	
 }
 
-#dateOutput1{
+#dateOutput0, #dateOutput1, #dateOutput2, #dateOutput3, #dateOutput4{
 	color: #483966;
 	resize: none;
 	width: 11vw;
@@ -136,7 +136,7 @@ img{
     border-color: transparent;
 }
 
-#descriptionOutput1{
+#descriptionOutput0, #descriptionOutput1, #descriptionOutput2, #descriptionOutput3, #descriptionOutput4{
 	color: #483966;
 	resize: none;
 	width: 11vw;

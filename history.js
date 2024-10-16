@@ -1,10 +1,10 @@
 
-pullmatrixLength();
+pullDreamIndex();
 
-let currentHigh=matrixLength;
-let currentLow=matrixLength-5;
+let currentHigh;
+let currentLow;
 let initialDreamOutputs;
-let matrixLength;
+let matrixLargestIndex;
 let matrix=[];
 
 constructMatrix();
@@ -15,7 +15,7 @@ function constructMatrix(){
     let matrixDate=[];
     let matrixFavorite=[];
     let matrixDescription=[];
-        for (let i=0;i<matrixLength+1;i++) {
+        for (let i=0;i<dreamIndex+1;i++) {
             matrixIndex.push(i);
             matrixTitle.push(localStorage.getItem("title"+i));
             matrixType.push(localStorage.getItem("type"+i));
@@ -48,22 +48,24 @@ matrix.push(matrixType);
 matrix.push(matrixDate);
 matrix.push(matrixFavorite);
 matrix.push(matrixDescription);
-matrixLength=matrixIndex.length-1
+matrixLargestIndex=matrixIndex.length-1
+currentHigh=matrixLargestIndex
+currentLow=matrixLargestIndex-5
 }
 
 initializeHistory();
 function initializeHistory(){
-    if(matrixLength>=4){
+    if(matrixLargestIndex>=4){
         initialDreamOutputs=5;
     }else{
-        initialDreamOutputs=matrixLength+1;
+        initialDreamOutputs=matrixLargestIndex+1;
     }
     for (let i=0;i<initialDreamOutputs;i++){
-        document.getElementById("titleOutput"+i).value = matrix[1][matrixLength-i];
-        //document.getElementById("typeOutput"+i)value = matrix[2][matrixLength-i];
-        document.getElementById("dateOutput"+i).value = matrix[3][matrixLength-i];
-        //document.getElementById("favoriteOutput"+i).setAttribute("value",localStorage.getItem("favorite"+(matrixLength-i)));
-        document.getElementById("descriptionOutput"+i).value = matrix[5][matrixLength-i];
+        document.getElementById("titleOutput"+i).value = matrix[1][matrixLargestIndex-i];
+        //document.getElementById("typeOutput"+i)value = matrix[2][matrixLargestIndex-i];
+        document.getElementById("dateOutput"+i).value = matrix[3][matrixLargestIndex-i];
+        //document.getElementById("favoriteOutput"+i).setAttribute("value",localStorage.getItem("favorite"+(matrixLargestIndex-i)));
+        document.getElementById("descriptionOutput"+i).value = matrix[5][matrixLargestIndex-i];
     }
 }
 
@@ -72,19 +74,21 @@ document.getElementById("Newest").addEventListener("click", function(){
     initializeHistory();
 });
 document.getElementById("Oldest").addEventListener("click", function(){
-
+    constructMatrix();
+    initializeHistory();
 });
 document.getElementById("Favorite").addEventListener("click", function(){
-
+    constructMatrix();
+    initializeHistory();
 });
 
 document.getElementById("increaseIndexBtn").addEventListener("click", function(){
-    if(matrixLength>=5){
+    if(matrixLargestIndex>=5){
         let increaseAmmount;
-        if(matrixLength-currentHigh>=4){
+        if(matrixLargestIndex-currentHigh>=4){
             increaseAmmount=4
         }else{
-            increaseAmmount=matrixLength-currentHigh
+            increaseAmmount=matrixLargestIndex-currentHigh
         }
         for (let i=0;i<5;i++) {
             document.getElementById("titleOutput"+i).value = matrix[1][currentHigh+increaseAmmount-i];
@@ -99,7 +103,7 @@ document.getElementById("increaseIndexBtn").addEventListener("click", function()
 });
 
 document.getElementById("decreaseIndexBtn").addEventListener("click", function(){
-    if(matrixLength>=5){
+    if(matrixLargestIndex>=5){
         let decreaseAmmount;
         if(currentLow>=4){
             decreaseAmmount=4

@@ -32,7 +32,7 @@ function constructMatrix(){
         matrixDescription.reverse();
     }if(document.getElementById("Favorite").checked){
         for (let i=0;i<matrixIndex.length;i++){
-            if (matrixFavorite[i]==false){
+            if (matrixFavorite[i]=="false"){
                 matrixIndex.splice(i,1);
                 matrixTitle.splice(i,1);
                 matrixType.splice(i,1);

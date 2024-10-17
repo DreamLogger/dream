@@ -10,12 +10,12 @@ h1{
     left:50%;
     transform: translateX(-50%);
     font-family: serif;
-    font-size: 1000%;
+    font-size: 12vw;
 }
 
 img{
-	width: 100px;
-	height: 100px;
+	width: 7.8vw;
+	height: 16vh;
 }
 
 .container{
@@ -32,14 +32,14 @@ img{
 	margin: 0;
 }
 
-#increaseIndexBtn{
+#decreaseIndexBtn{
     background-color: transparent;
     border-color: transparent;
 	margin: 0;	
 	transform: rotate(180deg);
 }
 
-#decreaseIndexBtn{
+#increaseIndexBtn{
     background-color: transparent;
     border-color: transparent;
 	margin: 0;	
@@ -112,7 +112,7 @@ img{
 .squaretitleOutput0{
 	font-family: serif;
 	position: absolute;
-	z-index: 2;
+	z-index: 1;
 	color: #483966;
 	margin-left: 12%;
 }
@@ -120,33 +120,33 @@ img{
 .squaretitleOutput1{
 	font-family: serif;
 	position: absolute;
-	z-index: 3;
+	z-index: 1;
 	color: #483966;
-	margin-left: 12%;
+	margin-left: 26%;
 }
 
 .squaretitleOutput2{
 	font-family: serif;
 	position: absolute;
-	z-index: 4;
+	z-index: 1;
 	color: #483966;
-	margin-left: 12%;
+	margin-left: 40%;
 }
 
 .squaretitleOutput3{
 	font-family: serif;
 	position: absolute;
-	z-index: 5;
+	z-index: 1;
 	color: #483966;
-	margin-left: 12%;
+	margin-left: 54%;
 }
 
 .squaretitleOutput4{
 	font-family: serif;
 	position: absolute;
-	z-index: 6;
+	z-index: 1;
 	color: #483966;
-	margin-left: 12%;
+	margin-left: 68%;
 }
 
 #titleOutput0, #titleOutput1, #titleOutput2, #titleOutput3, #titleOutput4{

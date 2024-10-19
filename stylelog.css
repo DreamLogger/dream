@@ -31,8 +31,8 @@ img{
 }
 
 .itemback{
-    width: 450px;
-    height: 400px;
+    width: 36vw;
+    height: 60vh;
     background-color: white;
 	border: 5px solid #869cc6;
 	border-radius: 5px;
@@ -43,77 +43,77 @@ img{
     justify-content: flex-start; 
     align-items: center; 
     height: 70vh; 
-	margin-left: 20px;
+	margin-left: 1.5vw;
 }
 
 .input-overlay-title{
 	position: absolute; 
-    top: 37%; 
-    left: 15%; 
+    top: 37vh; 
+    left: 20.4vw; 
     transform: translate(-50%, -50%); 
 	z-index: 1;
 }
 
 .input-label{
 	color: #483966;
-    font-size: 4rem;
+    font-size: 5vw
     font-family: serif;
 }
 
 .text-input{
     color: #483966;
-    font-size: 1.5rem;
+    font-size: 1.9vw;
     font-family: serif;	
 	border: 2px solid #869cc6;
 	border-radius: 5px;
-	width: 144%;
+	width: 34vw;
 }
 
 
 .input-overlay-type{
 	position: absolute; 
-    top: 58%; 
-    left: 15%; 
+    top: 58vh; 
+    left: 20.4vw; 
     transform: translate(-50%, -50%); 
 	z-index: 1;
 }
 
 .input-overlay-date{
 	position: absolute; 
-    top: 79%; 
-    left: 11.5%; 
+    top: 79vh; 
+    left: 12vw; 
     transform: translate(-50%, -50%); 
 	z-index: 1;
 }
 
 .date-label{
 	color: #483966;
-    font-size: 3rem;
+    font-size: 3.8vw;
     font-family: serif;
 }
 
 .custom-date{
 	appearance: none; 
-    width: 175px; 
+    width: 13.5vw; 
     border: 2px solid #869cc6; 
     border-radius: 5px; 
     background-color: #fff; 
-    font-size: 1.5rem;
-    margin-right: 30px;
+    font-size: 1.85vw;
+    margin-right: 3vw;
 }
 
 .input-overlay-favorite{
 	position: absolute; 
-    top: 79%; 
-    left: 28%; 
+    top: 79vh; 
+    left: 28vw; 
     transform: translate(-50%, -50%); 
 	z-index: 1;
 }
 
 .custom-checkbox{
 	appearance: none; 
-    width: 20px; 
-    height: 20px; 
+    width: 1.6vw; 
+    height: 3.2vh; 
     border: 2px solid #869cc6; 
     border-radius: 5px; 
     background-color: #fff; 
@@ -127,16 +127,16 @@ img{
 
 .custom-checkbox:checked::before {
     content: '✓'; 
-    font-size: 12px;
+    font-size: 0.9vw;
     color: white;
 	position: absolute;
     top: 0;
-    left: 3px;
+    left: 0.3vw;
 }
 
 .favorite-label{
 	color: #483966;
-    font-size: 3rem;
+    font-size: 4vw ;
     font-family: serif;	
 	border-radius: 5px;
 	width: 144%;
@@ -151,17 +151,17 @@ textarea{
 
 .textarea-container{
     position:absolute;
-    bottom: 10%;
-    left:50%;
+    bottom: 10vh;
+    left:50vw;
 }
 
 h6 {
     position: absolute;
-    bottom: 60%;
-    left: 50%;
-    font-size: 3rem;
+    bottom: 60vh;
+    left: 50vw;
+    font-size: 3.8vw;
     background-color: #ffffff;
-    padding: 20px 20px;
+    padding: 3vh 3vw;
     color: #483966;
     border-radius: 5px; 
     border: 5px solid #869cc6; 
@@ -171,10 +171,10 @@ h6 {
     border-radius: 5px;
     color: #483966;
     font-family: serif;
-    font-size: 5rem;
+    font-size: 6.3vw;
     position:absolute;
-    bottom: 78%;
-    left:74.5%;
+    bottom: 78vh;
+    left:74.5vw;
     background-color: white;
 	border-color: #869cc6;
 	border-width: 5px;

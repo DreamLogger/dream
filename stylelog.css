@@ -47,8 +47,8 @@ img{
 }
 
 .input-overlay-title{
-	position: absolute; 
-    top: 37vh; 
+	margin-top: 15vh;
+    position: absolute; 
     left: 20.4vw; 
     transform: translate(-50%, -50%); 
 	z-index: 1;
@@ -71,16 +71,16 @@ img{
 
 
 .input-overlay-type{
-	position: absolute; 
-    top: 58vh; 
+    margin-top: 36vh;
+    position: absolute; 
     left: 20.4vw; 
     transform: translate(-50%, -50%); 
 	z-index: 1;
 }
 
 .input-overlay-date{
-	position: absolute; 
-    top: 79vh; 
+    margin-top: 57.7vh;
+    position: absolute; 
     left: 12vw; 
     transform: translate(-50%, -50%); 
 	z-index: 1;

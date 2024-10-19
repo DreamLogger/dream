@@ -6,8 +6,8 @@ body{
 h1{
     color: #d4ecff;
     position:absolute;
-    bottom:55%;
-    left:50%;
+    bottom:55vh;
+    left:50vw;
     transform: translateX(-50%);
     font-family: serif;
     font-size: 12vw;
@@ -16,6 +16,7 @@ h1{
 img{
 	width: 7.8vw;
 	height: 16vh;
+	cursor: pointer;
 }
 
 .container{
@@ -49,20 +50,20 @@ img{
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    margin-top: 10%;
-    padding: 0 50px; 
+    margin-top: 20vh;
+    padding: 0 4vw; 
 }
 
 .historysquarecontainer{
 	display: flex;
     justify-content: space-around; 
     flex-grow: 1; 
-    margin: 0 20px;
+    margin: 0 1.3vw;
 }
 
 .historysquare{
-    width: 150px;
-    height: 300px;
+    width: 12vw;
+    height: 47vh;
     background-color: white;
 	border: 5px solid #869cc6;
 	border-radius: 5px;
@@ -71,8 +72,8 @@ img{
 .dropdown{
 	display: inline-block;
 	position: absolute;
-	top: 10%;
-	right:20%;
+	top: 10vh;
+	right:20vw;
 }
 
 .dropdown button{
@@ -80,9 +81,8 @@ img{
 	color: #483966;
 	border: 2px solid #869cc6;
 	border-radius: 5px;
-	padding: 10px 15px;
+	padding: 1.6vh 1.2vw;
 	cursor: pointer;
-	
 }
 
 .dropdown .dropdown-content{
@@ -90,7 +90,7 @@ img{
 	display: none;
 	position: absolute;
 	background-color: white;
-	min-width: 100px;
+	min-width: 8vw;
 	border: 2px solid #869cc6;
 	border-radius: 5px;
 	box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.7);
@@ -114,7 +114,7 @@ img{
 	position: absolute;
 	z-index: 1;
 	color: #483966;
-	margin-left: 12%;
+	margin-left: 12vw;
 }
 
 .squaretitleOutput1{
@@ -122,7 +122,7 @@ img{
 	position: absolute;
 	z-index: 1;
 	color: #483966;
-	margin-left: 26%;
+	margin-left: 26vw;
 }
 
 .squaretitleOutput2{
@@ -130,7 +130,7 @@ img{
 	position: absolute;
 	z-index: 1;
 	color: #483966;
-	margin-left: 40%;
+	margin-left: 40vw;
 }
 
 .squaretitleOutput3{
@@ -138,7 +138,7 @@ img{
 	position: absolute;
 	z-index: 1;
 	color: #483966;
-	margin-left: 54%;
+	margin-left: 54vw;
 }
 
 .squaretitleOutput4{
@@ -146,7 +146,7 @@ img{
 	position: absolute;
 	z-index: 1;
 	color: #483966;
-	margin-left: 68%;
+	margin-left: 68vw;
 }
 
 #titleOutput0, #titleOutput1, #titleOutput2, #titleOutput3, #titleOutput4{

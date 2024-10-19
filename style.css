@@ -6,11 +6,11 @@ body{
 h1{
     color: #d4ecff;
     position:absolute;
-    top:1%;
-    left:50%;
+    top:1vh;
+    left:50vw;
     transform: translateX(-50%);
     font-family: serif;
-    font-size: 10rem;
+    font-size: 12vw;
 }
 
 button{
@@ -20,6 +20,7 @@ button{
     padding: 10vh 5vw;
     border-radius: 10%;
     border-width: 5px;
+    cursor: pointer;
 }
 
 .button-container {

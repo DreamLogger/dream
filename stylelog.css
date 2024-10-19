@@ -79,7 +79,7 @@ img{
 }
 
 .input-overlay-date{
-    margin-top: 57.7vh;
+    margin-top: 57.5vh;
     position: absolute; 
     left: 12vw; 
     transform: translate(-50%, -50%); 
@@ -103,8 +103,8 @@ img{
 }
 
 .input-overlay-favorite{
+	margin-top: 57.5vh;
 	position: absolute; 
-    top: 79vh; 
     left: 28vw; 
     transform: translate(-50%, -50%); 
 	z-index: 1;

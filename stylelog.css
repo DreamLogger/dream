@@ -193,10 +193,6 @@ h6 {
     transform: rotate(-3deg);
 }
 
-.savebuttoncontainer{
-    transition: transform 0.5s linear;
-}
-
 .savebuttoncontainer:hover{
     animation: alittle 1s linear infinite;
 }

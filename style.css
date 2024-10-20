@@ -46,3 +46,12 @@ button{
 .log-button:hover{
     transform: rotate(3deg);
 }
+
+.header {
+    color: #d4ecff; 
+    transition: color 0.5s ease; 
+}
+
+.header:hover {
+    color: #9bd0fb; 
+}

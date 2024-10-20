@@ -32,8 +32,7 @@ button{
   }
 
 .history-button{
-    animation-name: bordercolors;
-    animation-duration: 3s;  
+    transition: transform 2s;  
 }
 
 .history-button:hover{
@@ -41,17 +40,9 @@ button{
 }
 
 .log-button{
-    animation-name: bordercolors;
-    animation-duration: 3s;  
+    transition: transform 2s;  
 }
 
 .log-button:hover{
     transform: rotate(3deg);
-}
-
-@keyframes bordercolors {
-    0%   {border-color: #869cc6;}
-    25%  {border-color: #a9c5f9;}
-    50%  {border-color: #b6dcfc;}
-    100% {border-color: #d4ecff;}
 }

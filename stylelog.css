@@ -184,13 +184,8 @@ h6 {
 	border-color: #869cc6;
 	border-width: 5px;
 }
-
-.exitbuttoncontainer{
-    transition: transform 2s; 
-}
-
 .exitbuttoncontainer:hover{
-    transform: rotate(-3deg);
+    animation: alittle 1s linear infinite;
 }
 
 .savebuttoncontainer:hover{

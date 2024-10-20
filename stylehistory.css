@@ -177,3 +177,35 @@ img{
 	background-color: transparent;
     border-color: transparent;
 }
+
+.container{
+    transition: transform 2s; 
+  }
+
+.container:hover{
+    transform: rotate(-1deg);
+}
+
+.right-button-container{
+	transition: transform 2s; 
+}
+
+.right-button-container:hover{
+    transform: rotate(1deg);
+}
+
+.left-button-container{
+	transition: transform 2s; 
+}
+
+.left-button-container:hover{
+    transform: rotate(-1deg);
+}
+
+.history-header{
+
+}
+
+@keyframes example {
+
+}

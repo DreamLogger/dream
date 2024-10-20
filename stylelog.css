@@ -194,9 +194,27 @@ h6 {
 }
 
 .savebuttoncontainer{
-    transition: transform 4s; 
+    transition: transform 0.5s linear;
 }
 
 .savebuttoncontainer:hover{
-    transform: rotate(360deg);
+    animation: alittle 1s linear infinite;
+}
+
+@keyframes alittle {
+    0% {
+        transform: rotate(0deg); 
+    }
+	25% {
+        transform: rotate(-1deg); 
+    }
+	50% {
+        transform: rotate(0deg); 
+    }
+	75% {
+        transform: rotate(1deg); 
+    }
+	100% {
+        transform: rotate(0deg); 
+    }
 }

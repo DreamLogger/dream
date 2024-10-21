@@ -262,7 +262,7 @@ img{
 .deleteBtn3class{
 	margin-top: 2vh;
 	position: absolute;
-	left: 60.8vw;
+	left: 60vw;
 	z-index: 2;
 	font-size: 2vw;
 	border: 2px solid #869cc6;
@@ -278,7 +278,7 @@ img{
 .deleteBtn4class{
 	margin-top: 2vh;
 	position: absolute;
-	left: 74.8vw;
+	left: 73.6vw;
 	z-index: 2;
 	font-size: 2vw;
 	border: 2px solid #869cc6;

@@ -210,3 +210,83 @@ img{
         transform: rotate(0deg); 
     }
 }
+
+.deleteBtn0class{
+	margin-top: 2vh;
+	position: absolute;
+	left: 18.8vw;
+	z-index: 2;
+	font-size: 2vw;
+	border: 2px solid #869cc6;
+	border-radius: 5px;
+	color: #483966;
+	font-family: serif;
+}
+
+.deleteBtn0class:hover{
+    animation: alittle 1s linear infinite;
+}
+
+.deleteBtn1class{
+	margin-top: 2vh;
+	position: absolute;
+	left: 32.8vw;
+	z-index: 2;
+	font-size: 2vw;
+	border: 2px solid #869cc6;
+	border-radius: 5px;
+	color: #483966;
+	font-family: serif;
+}
+
+.deleteBtn1class:hover{
+    animation: alittle 1s linear infinite;
+}
+
+.deleteBtn2class{
+	margin-top: 2vh;
+	position: absolute;
+	left: 46.8vw;
+	z-index: 2;
+	font-size: 2vw;
+	border: 2px solid #869cc6;
+	border-radius: 5px;
+	color: #483966;
+	font-family: serif;
+}
+
+.deleteBtn2class:hover{
+    animation: alittle 1s linear infinite;
+}
+
+.deleteBtn3class{
+	margin-top: 2vh;
+	position: absolute;
+	left: 60.8vw;
+	z-index: 2;
+	font-size: 2vw;
+	border: 2px solid #869cc6;
+	border-radius: 5px;
+	color: #483966;
+	font-family: serif;
+}
+
+.deleteBtn3class:hover{
+    animation: alittle 1s linear infinite;
+}
+
+.deleteBtn4class{
+	margin-top: 2vh;
+	position: absolute;
+	left: 74.8vw;
+	z-index: 2;
+	font-size: 2vw;
+	border: 2px solid #869cc6;
+	border-radius: 5px;
+	color: #483966;
+	font-family: serif;
+}
+
+.deleteBtn4class:hover{
+    animation: alittle 1s linear infinite;
+}

@@ -162,6 +162,15 @@ img{
 	
 }
 
+#typeOutput0, #typeOutput1, #typeOutput2, #typeOutput3, #typeOutput4{
+	color: #483966;
+	font-size: 1vw;
+	resize: none;
+	width: 11vw;
+	background-color: transparent;
+    border-color: transparent;
+}
+
 #dateOutput0, #dateOutput1, #dateOutput2, #dateOutput3, #dateOutput4{
 	color: #483966;
 	resize: none;
@@ -176,7 +185,7 @@ img{
 	resize: none;
 	width: 11vw;
 	height: 37vh;
-	font-size: 1vw;
+	font-size: 0.9vw;
 	background-color: transparent;
     border-color: transparent;
 }

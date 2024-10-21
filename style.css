@@ -6,7 +6,7 @@ body{
 h1{
     color: #d4ecff;
     position:absolute;
-    top:1vh;
+    bottom:45vh;
     left:50vw;
     transform: translateX(-50%);
     font-family: serif;

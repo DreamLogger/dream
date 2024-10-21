@@ -86,6 +86,7 @@ img{
 	animation-name: bordercolorchange;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
+	font-family: serif;
 }
 
 .dropdown .dropdown-content{

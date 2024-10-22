@@ -33,7 +33,7 @@ function constructMatrix(){
         matrixDescription.reverse();
     }
     if(document.getElementById("dropdown2").checked){
-        for (let i=0;i<matrixIndex;i++){
+        for (let i=0;i<matrixIndex.length;i++){
             if (matrixFavorite[i]=="false"){
                 matrixIndex.splice(i,1);
                 matrixTitle.splice(i,1);
@@ -41,6 +41,7 @@ function constructMatrix(){
                 matrixDate.splice(i,1);
                 matrixFavorite.splice(i,1);
                 matrixDescription.splice(i,1);
+                i--;
             }
         }
     }

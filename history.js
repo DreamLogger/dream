@@ -7,16 +7,16 @@ let initialDreamOutputs;
 let matrixLargestIndex;
 
 let matrix=[];
-let matrixIndex=[];
-let matrixTitle=[];
-let matrixType=[];
-let matrixDate=[];
-let matrixFavorite=[];
-let matrixDescription=[];
 
 constructMatrix();
 function constructMatrix(){
-    matrix.splice(0,matrix.length)
+    let matrixIndex=[];
+    let matrixTitle=[];
+    let matrixType=[];
+    let matrixDate=[];
+    let matrixFavorite=[];
+    let matrixDescription=[];
+    matrix.splice(0,matrix.length);
         for (let i=0;i<dreamIndex+1;i++) {
             matrixIndex.push(i);
             matrixTitle.push(localStorage.getItem("title"+i));
@@ -118,6 +118,7 @@ document.getElementById("decreaseIndexBtn").addEventListener("click", function()
 
 for (let i=0;i<5;i++) {
     document.getElementById("deleteBtn"+i).addEventListener("click", function(){
+        let matrixIndex=matrix[0]
         deleteIndex=matrixIndex[currentHigh-i];
         if(deleteIndex>=0){
             pullLocalData();

@@ -70,7 +70,7 @@ function pullLocalData(){
 
 function storeLocalData(){
     pullDreamIndex();
-    localStorage.clear;
+    localStorage.clear();
     for (let i=0;i<dreamIndex+1;i++) {
         localStorage.setItem("title"+i,title[i]);
         localStorage.setItem("type"+i,type[i]);

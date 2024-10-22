@@ -33,7 +33,7 @@ function constructMatrix(){
         matrixDescription.reverse();
     }
     if(document.getElementById("dropdown2").checked){
-        for (let i=0;i<matrixIndex.length;i++){
+        for (let i=0;i<matrixIndex;i++){
             if (matrixFavorite[i]=="false"){
                 matrixIndex.splice(i,1);
                 matrixTitle.splice(i,1);

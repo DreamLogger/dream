@@ -123,9 +123,11 @@ document.getElementById("decreaseIndexBtn").addEventListener("click", function()
 
 for (let i=0;i<5;i++) {
     document.getElementById("deleteBtn"+i).addEventListener("click", function(){
-        pullLocalData();
         deleteIndex=matrixIndex[currentHigh-i];
-        deleteEntry();
-        storeLocalData();
+        if(deleteIndex>=0){
+            pullLocalData();
+            deleteEntry();
+            storeLocalData();
+        }
     });
 }

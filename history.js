@@ -16,7 +16,7 @@ let matrixDescription=[];
 
 constructMatrix();
 function constructMatrix(){
-    matrix=[];
+    matrix.splice(0,matrix.length)
         for (let i=0;i<dreamIndex+1;i++) {
             matrixIndex.push(i);
             matrixTitle.push(localStorage.getItem("title"+i));

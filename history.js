@@ -63,9 +63,8 @@ function initializeHistory(){
     }
     for (let i=0;i<initialDreamOutputs;i++){
         document.getElementById("titleOutput"+i).value = matrix[1][matrixLargestIndex-i];
-        //document.getElementById("typeOutput"+i)value = matrix[2][matrixLargestIndex-i];
+        document.getElementById("typeOutput"+i).value = matrix[2][matrixLargestIndex-i];
         document.getElementById("dateOutput"+i).value = matrix[3][matrixLargestIndex-i];
-        //document.getElementById("favoriteOutput"+i).setAttribute("value",localStorage.getItem("favorite"+(matrixLargestIndex-i)));
         document.getElementById("descriptionOutput"+i).value = matrix[5][matrixLargestIndex-i];
     }
 }
@@ -93,9 +92,8 @@ document.getElementById("increaseIndexBtn").addEventListener("click", function()
         }
         for (let i=0;i<5;i++) {
             document.getElementById("titleOutput"+i).value = matrix[1][currentHigh+increaseAmmount-i];
-            //document.getElementById("typeOutput"+i).value = matrix[2][currentHigh+increaseAmmount-i];
+            document.getElementById("typeOutput"+i).value = matrix[2][currentHigh+increaseAmmount-i];
             document.getElementById("dateOutput"+i).value = matrix[3][currentHigh+increaseAmmount-i];
-           // document.getElementById("favoriteOutput"+i).setAttribute("value",localStorage.getItem("favorite"+(currentHigh+increaseAmmount-i)));
             document.getElementById("descriptionOutput"+i).value = matrix[5][currentHigh+increaseAmmount-i];
         }
         currentHigh=currentHigh+increaseAmmount
@@ -113,9 +111,8 @@ document.getElementById("decreaseIndexBtn").addEventListener("click", function()
         }
         for (let i=4;i>-1;i--) {
             document.getElementById("titleOutput"+i).value = matrix[1][currentLow-decreaseAmmount-i+4];
-            //document.getElementById("typeOutput"+i).value = matrix[2][currentLow-decreaseAmmount-i+4];
+            document.getElementById("typeOutput"+i).value = matrix[2][currentLow-decreaseAmmount-i+4];
             document.getElementById("dateOutput"+i).value = matrix[3][currentLow-decreaseAmmount-i+4];
-            //document.getElementById("favoriteOutput"+i).setAttribute("value",localStorage.getItem("favorite"+(currentLow-decreaseAmmount-i+4)));
             document.getElementById("descriptionOutput"+i).value = matrix[5][currentLow-decreaseAmmount-i+4];
         }
         currentHigh=currentHigh-decreaseAmmount
@@ -123,10 +120,11 @@ document.getElementById("decreaseIndexBtn").addEventListener("click", function()
     }
 });
 
-/*
-document.getElementById("deleteDreamBtn").addEventListener("click", function(){
-    pullLocalData();
-    deleteEntry();
-    storeLocalData();
-});
-*/
+for (let i=0;i<5;i++) {
+    document.getElementById("deleteBtn"+i).addEventListener("click", function(){
+        pullLocalData();
+        deleteIndex=currentHigh-i
+        deleteEntry();
+        storeLocalData();
+    });
+}

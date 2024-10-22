@@ -39,13 +39,15 @@ function pushEntry(){
 }
 
 function deleteEntry(){
-    title.splice(deleteIndex,1);
-    type.splice(deleteIndex,1);
-    date.splice(deleteIndex,1);
-    favorite.splice(deleteIndex,1);
-    description.splice(deleteIndex,1);
-    dreamIndex--;
-    localStorage.setItem("currentDreamIndex",dreamIndex); 
+    if(Number(localStorage.getItem("currentDreamIndex"))>-1){
+        title.splice(deleteIndex,1);
+        type.splice(deleteIndex,1);
+        date.splice(deleteIndex,1);
+        favorite.splice(deleteIndex,1);
+        description.splice(deleteIndex,1);
+        dreamIndex--;
+        localStorage.setItem("currentDreamIndex",dreamIndex); 
+    }
 }
 
 function pullLocalData(){

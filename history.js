@@ -25,14 +25,15 @@ function constructMatrix(){
             matrixFavorite.push(localStorage.getItem("favorite"+i));
             matrixDescription.push(localStorage.getItem("description"+i));
         }
-    if(document.getElementById("Oldest").checked){
+    if(document.getElementById("dropdown1").checked){
         matrixIndex.reverse();
         matrixTitle.reverse();
         matrixType.reverse();
         matrixDate.reverse();
         matrixFavorite.reverse();
         matrixDescription.reverse();
-    }if(document.getElementById("Favorite").checked){
+    }
+    if(document.getElementById("dropdown2").checked){
         for (let i=0;i<matrixIndex.length;i++){
             if (matrixFavorite[i]=="false"){
                 matrixIndex.splice(i,1);
@@ -55,8 +56,8 @@ currentHigh=matrixLargestIndex;
 currentLow=matrixLargestIndex-5;
 }
 
-initializeHistory();
-function initializeHistory(){
+setHistory();
+function setHistory(){
     if(matrixLargestIndex>=4){
         initialDreamOutputs=5;
     }else{
@@ -70,18 +71,12 @@ function initializeHistory(){
     }
 }
 
-document.getElementById("Newest").addEventListener("click", function(){
-    constructMatrix();
-    initializeHistory();
-});
-document.getElementById("Oldest").addEventListener("click", function(){
-    constructMatrix();
-    initializeHistory();
-});
-document.getElementById("Favorite").addEventListener("click", function(){
-    constructMatrix();
-    initializeHistory();
-});
+for (let i=0;i<3;i++) {
+    document.getElementById("dropdown"+i).addEventListener("click", function(){
+        constructMatrix();
+        setHistory();
+    });
+}
 
 document.getElementById("increaseIndexBtn").addEventListener("click", function(){
     if(matrixLargestIndex>=5){
@@ -128,6 +123,8 @@ for (let i=0;i<5;i++) {
             pullLocalData();
             deleteEntry();
             storeLocalData();
+            constructMatrix();
+            setHistory();
         }
     });
 }

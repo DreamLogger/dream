@@ -3,7 +3,6 @@ pullDreamIndex();
 
 let currentHigh;
 let currentLow;
-let initialDreamOutputs;
 let matrixLargestIndex;
 
 let matrix=[];
@@ -58,16 +57,18 @@ currentLow=matrixLargestIndex-5;
 
 setHistory();
 function setHistory(){
-    if(matrixLargestIndex>=4){
-        initialDreamOutputs=5;
-    }else{
-        initialDreamOutputs=matrixLargestIndex+1;
-    }
-    for (let i=0;i<initialDreamOutputs;i++){
+    for (let i=0;i<5;i++){
+        if(matrix[0][i]==null){
+        document.getElementById("titleOutput"+i).value = null;
+        document.getElementById("typeOutput"+i).value = null;
+        document.getElementById("dateOutput"+i).value = null;
+        document.getElementById("descriptionOutput"+i).value = null;
+        }else{
         document.getElementById("titleOutput"+i).value = matrix[1][matrixLargestIndex-i];
         document.getElementById("typeOutput"+i).value = matrix[2][matrixLargestIndex-i];
         document.getElementById("dateOutput"+i).value = matrix[3][matrixLargestIndex-i];
         document.getElementById("descriptionOutput"+i).value = matrix[5][matrixLargestIndex-i];
+        }
     }
 }
 

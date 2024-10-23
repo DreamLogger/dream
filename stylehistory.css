@@ -46,7 +46,7 @@ img{
 	margin: 0;	
 }
 
-.button-container{
+.content-container{
     display: flex;
     justify-content: space-between; 
     align-items: center; 

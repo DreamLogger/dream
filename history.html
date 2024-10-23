@@ -1,6 +1,6 @@
 <html> 
     <head>
-		<!--linking the history html page to its css file-->
+		<!--Linking the history html page to its css file-->
         <link rel="stylesheet" href="stylehistory.css">
     </head>
     <body>
@@ -16,15 +16,16 @@
 			</button>
 			</a>
 		</div>
-		<!--creating-->
+		<!--Creating a class to contain to the main content that will displayed for the history page-->
 		<div class="content-container">
+		<!--Creating a button that moves through your entries when you click on it-->
 		<div class="left-button-container">
 			<button id="increaseIndexBtn">
 				<img src="directionarrow.png" alt="directionarrowpng" />
 			</button>
 		</div>
 
-		
+		<!--Creating the squares that will be the background of history entries-->
 		<div class="historysquarecontainer">
 			<div class="historysquare1 historysquare"></div>
 			<div class="historysquare2 historysquare"></div>
@@ -32,7 +33,8 @@
 			<div class="historysquare4 historysquare"></div>
 			<div class="historysquare5 historysquare"></div>
 		</div>
-		
+		<!--Putting the outputs that will appear on the first entry-->
+		<!--Each of the outputs/textareas are given ids, colums, rows, classes, and placeholder text-->
 		<div class="squaretitleOutput0">
 			<textarea readonly rows="1" cols="10" id="titleOutput0" class="titleAreas" placeholder="Title of Dream"></textarea>
 			<br>
@@ -42,7 +44,8 @@
 			<br>
 			<textarea readonly rows="10" cols="10" id="descriptionOutput0" class="descriptionAreas" placeholder="Description of Dream" ></textarea>
 		</div>
-
+		<!--Putting the outputs that will appear on the second entry-->
+		<!--Each of the outputs/textareas are given ids, colums, rows, classes, and placeholder text-->
 		<div class="squaretitleOutput1">
 			<textarea readonly rows="1" cols="10" id="titleOutput1" class="titleAreas" placeholder="Title of Dream"></textarea>
 			<br>
@@ -52,7 +55,8 @@
 			<br>
 			<textarea readonly rows="10" cols="10" id="descriptionOutput1" class="descriptionAreas" placeholder="Description of Dream" ></textarea>
 		</div>
-
+		<!--Putting the outputs that will appear on the third entry-->
+		<!--Each of the outputs/textareas are given ids, colums, rows, classes, and placeholder text-->
 		<div class="squaretitleOutput2">
 			<textarea readonly rows="1" cols="10" id="titleOutput2" class="titleAreas" placeholder="Title of Dream"></textarea>
 			<br>
@@ -62,7 +66,8 @@
 			<br>
 			<textarea readonly rows="10" cols="10" id="descriptionOutput2" class="descriptionAreas" placeholder="Description of Dream" ></textarea>
 		</div>
-
+		<!--Putting the outputs that will appear on the fourth entry-->
+		<!--Each of the outputs/textareas are given ids, colums, rows, classes, and placeholder text-->
 		<div class="squaretitleOutput3">
 			<textarea readonly rows="1" cols="10" id="titleOutput3" class="titleAreas" placeholder="Title of Dream"></textarea>
 			<br>
@@ -72,7 +77,8 @@
 			<br>
 			<textarea readonly rows="10" cols="10" id="descriptionOutput3" class="descriptionAreas" placeholder="Description of Dream" ></textarea>
 		</div>
-
+		<!--Putting the outputs that will appear on the fifth entry-->
+		<!--Each of the outputs/textareas are given ids, colums, rows, classes, and placeholder text-->
 		<div class="squaretitleOutput4">
 			<textarea readonly rows="1" cols="10" id="titleOutput4" class="titleAreas" placeholder="Title of Dream"></textarea>
 			<br>
@@ -82,13 +88,14 @@
 			<br>
 			<textarea readonly rows="10" cols="10" id="descriptionOutput4" class="descriptionAreas" placeholder="Description of Dream" ></textarea>
 		</div>
+		<!--Creating another button that will scroll through the history entries-->
 		<div class="right-button-container">
 			<button id="decreaseIndexBtn">
 				<img src="directionarrow.png" alt="directionarrowpng" />
 			</button>   
 		</div>     
 		</div>
-			
+		<!--Creating the dropdown that will used to sort how the history entries appear-->
 		<div class="dropdown">
 			<button class="dropbtn">Sort By ></button>
 				<div class="dropdown-content">
@@ -100,7 +107,8 @@
 					<label for="dropdown2" class="radiolabelcontainer">Favorite</label>
 				</div>
 		</div>
-
+		<!--Creating the buttons that will be used to delete history entries-->
+		<!--The buttons were given ids, classes, and text-->
 		<div class="delete-button-containers">
 			<button id="deleteBtn0" class="deleteBtn0class">Delete</button>
 			<button id="deleteBtn1" class="deleteBtn1class">Delete</button>
@@ -108,7 +116,7 @@
 			<button id="deleteBtn3" class="deleteBtn3class">Delete</button>
 			<button id="deleteBtn4" class="deleteBtn4class">Delete</button>
         </div>
-
+	<!--Linking the history page to some javascript files-->
     <script src="functions.js"></script>
 	<script src="history.js"></script>
     </body>

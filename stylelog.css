@@ -15,55 +15,72 @@ h1{
 }
 
 #exitBtn{
-    /**/
+    /*Making the background and border of the exit button transparent and have no automatic margin*/
     background-color: transparent;
     border-color: transparent;
 	margin: 0;
 }
 
 img{
+    /*Making images have the dimensions of 100px by 100px*/
 	width: 100px;
 	height: 100px;
 }
 
 .title-exit-container{
+    /*The title header will display at the top left of the screen*/
     display: flex;
     justify-content: flex-start;
     align-items: center; 
+    /*Sets the main axis in which the content follows*/
     flex-direction: row;
 }
 
 .itemback{
+    /*Sets the background square to have its width 36 % of the viewport and the height 60% of the viewport */
     width: 36vw;
     height: 60vh;
+    /*Sets the background square's background to white*/
     background-color: white;
+    /*Sets the background square's border to have a set width, line type, radius, and color */
 	border: 5px solid #869cc6;
 	border-radius: 5px;
 }
 
 .square{
+    /*sets the background square to postition it self on the top left side*/
     display: flex;
     justify-content: flex-start; 
     align-items: center; 
+    /*Set the height of the background square to 70 % of the viewport's height*/
     height: 70vh; 
+    /*Set the left margin of the background square to 1.5 % of viewport's width*/
 	margin-left: 1.5vw;
 }
 
 .input-overlay-title{
+    /*Sets the title input and label to have its top margin 15 % of the viewport's height*/
 	margin-top: 15vh;
     position: absolute; 
-    left: 20.4vw; 
+    /*Setting the title input and label to be 20.4% of the viewport's width from the left*/
+    left: 20.4vw;
+    /* Centers the title input and label horizontally and vertically */
     transform: translate(-50%, -50%); 
+    /* Set stacking order to 1 (above elements with lower z-index) */
 	z-index: 1;
 }
 
 .input-label{
+    /*sets any text input label to have its text have a set color, font size, and font*/
 	color: #483966;
     font-size: 5vw;
     font-family: serif;
 }
 
 .text-input{
+    /*sets any text input to have its text have a set color, font size, and font*/
+    /*sets any text input to have its border have a set width, line type, and color*/
+    /*sets any text input to have a width 34% of the viewport's width*/
     color: #483966;
     font-size: 1.9vw;
     font-family: serif;	
@@ -74,75 +91,111 @@ img{
 
 
 .input-overlay-type{
+    /*Sets the type input and label to have its top margin 36 % of the viewport's height*/
     margin-top: 36vh;
     position: absolute; 
+    /*Setting the type input and label to be 20.4% of the viewport's width from the left*/
     left: 20.4vw; 
+    /* Centers the type input and label horizontally and vertically */
     transform: translate(-50%, -50%); 
+    /* Sets stacking order to 1 (above elements with lower z-index) */
 	z-index: 1;
 }
 
 .input-overlay-date{
+    /*Sets the date input and label to have its top margin 57.5 % of the viewport's height*/
     margin-top: 57.5vh;
     position: absolute; 
+    /*Setting the date input and label to be 12% of the viewport's width from the left*/
     left: 12vw; 
+    /* Centers the date input and label horizontally and vertically */
     transform: translate(-50%, -50%); 
+    /* Sets stacking order to 1 (above elements with lower z-index) */
 	z-index: 1;
 }
 
 .date-label{
+    /*Sets the date label's text color, text size, and font*/
 	color: #483966;
     font-size: 3.8vw;
     font-family: serif;
 }
 
 .custom-date{
+    /*Sets the date input not to have a default appearance*/
 	appearance: none; 
+    /*Sets the date input to have a width of 13.5 % of the viewport's width*/
     width: 13.5vw; 
+    /*Makes the date input's border have set, width, line type, color, and corner radius*/
     border: 2px solid #869cc6; 
     border-radius: 5px; 
+    /*Makes the date input's background color to be white*/
     background-color: #fff; 
+    /*Makes the date input's font to be 1.85 % of the viewport's width*/
     font-size: 1.85vw;
+    /*Makes the date input's right margin to be 3 % of the viewport's width*/
     margin-right: 3vw;
 }
 
 .input-overlay-favorite{
+    /*Sets the favorite input and label to have its top margin 57.5 % of the viewport's height*/
 	margin-top: 57.5vh;
 	position: absolute; 
+    /*Setting the favorite input and label to be 28% of the viewport's width from the left*/
     left: 28vw; 
+    /* Centers the favorite input and label horizontally and vertically */
     transform: translate(-50%, -50%); 
+    /* Sets stacking order to 1 (above elements with lower z-index) */
 	z-index: 1;
 }
 
 .custom-checkbox{
+    /*Sets the favorite input not to have a default appearance*/
 	appearance: none; 
+    /*Sets the favorite input's width to be 1.6% of the viewports width */
     width: 1.6vw; 
+    /*Sets the favorite input's height to be 3.2% of the viewports height */
     height: 3.2vh; 
+    /*Makes the favorite input's border have set, width, line type, color, and corner radius*/
     border: 2px solid #869cc6; 
     border-radius: 5px; 
+    /*Makes the favorite input's background to be the color white*/
     background-color: #fff; 
+    /* Scale the element to 1.5 times its original size */
     transform: scale(1.5); 
+    /*Sets the favorite input's right margin be 10px*/
     margin-right: 10px; 
+    /*Runs the transition for 3 seconds*/
     transition: transform 3s;
 }
 
 .custom-checkbox:hover{
+    /*When you hover over the favorite input, it begins to rotate 360 degrees*/
     transform: rotate(360deg);
   }
 
 .custom-checkbox:checked {
+    /*When you click on the favorite input the background color is changed*/
     background-color: #6a7da0; 
 }
 
 .custom-checkbox:checked::before {
+    /* Add styles before the favorite input content when checked */
+    /*Set the content to a certain character*/
     content: '✓'; 
+    /*Set the font size of the favorite input to be 0.9% of the viewport's width*/
     font-size: 0.9vw;
+    /*Set the text of the favorite input to be white*/
     color: white;
 	position: absolute;
+    /*Setting the content to be 0 from the top of the checkbox*/
     top: 0;
+    /*Setting the content to be 0.3 % of the viewport's width from the left*/
     left: 0.3vw;
 }
 
 .favorite-label{
+    /*Setting the favorite label's text to have a set color, font, and size*/
 	color: #483966;
     font-size: 4vw ;
     font-family: serif;	

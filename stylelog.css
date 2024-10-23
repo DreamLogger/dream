@@ -23,7 +23,7 @@ img{
 	height: 100px;
 }
 
-.container{
+.exit-container{
     display: flex;
     justify-content: flex-start;
     align-items: center; 

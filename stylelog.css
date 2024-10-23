@@ -1,9 +1,12 @@
 body{
+    /*Setting the background as an image */
     background-image: url('dreamer.png');
     background-size: cover;
 }
 
 h1{
+    /*Giving the header have no automatic margin and have a 30px margin on its left side*/
+    /*Giving the header's text a different font, size, and color*/
     color: #d4ecff;
     font-family: serif;
     font-size: 7rem;
@@ -12,7 +15,7 @@ h1{
 }
 
 #exitBtn{
-    color: #d4ecff;
+    /**/
     background-color: transparent;
     border-color: transparent;
 	margin: 0;

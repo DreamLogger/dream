@@ -6,64 +6,74 @@
 	<link rel="stylesheet" href="stylelog.css">
     </head>
     <body>
-		<!--Creating a button that takes you back to the main page when clicked-->
+		<!--Creating a class that contains the title and exit button-->
         <div class="title-exit-container">
+			<!--Creating a button that takes you back to the main page when clicked-->
             <a href="index.html">
                 <button id="exitBtn" class="exitbuttoncontainer">
 					<img src="backarrow.png" alt="backarrowpng" />
 				</button>
             </a>
-				<!---->
+			<!--Creating a header that says Dream-->
 				<h1>Dream</h1>
         </div>
-
+		<!--Creating a class for the title's label and input-->
 		<div class="input-overlay-title">
 			<form>
+				<!--Creating the title's label and giving it a class and text-->
 				<label for="titleInput" class="input-label">Title:</label>
 					<br>
+				<!--Creating the title's input, giving it a id, class, name, and placerholder text-->
 				<input type="text" id="titleInput" class="text-input" name="titleInput" placeholder="Title of your Dream">
 			</form>
 		</div>
-		
+		<!--Creating a class for the type's label and input-->
 		<div class="input-overlay-type">
 			<form>
+				<!--Creating the type's label and giving it a class and text-->
                 <label for="typeInput" class="input-label">Type:</label>
 					<br>
+				<!--Creating the type's input, giving it a id, class, name, and placerholder text-->
                 <input type="text" id="typeInput" class="text-input" name="typeInput" placeholder="Regular, Lucid, Nightmare...">
 			</form>
 		</div>
-		
+		<!--Creating a class for the date's label and input-->
 		<div class="input-overlay-date">
 			<form>
+				<!--Creating the date's label and giving it a class and text-->
                 <label for="dateInput" class="date-label">Date:</label>
 				<br>
+				<!--Creating the date's input, giving it a id, class, and name-->
                 <input type="date" id="dateInput" class="custom-date" name="dateInput">
 			</form>
 		</div>
-		
+		<!--Creating a class for the favorite's label and input-->
 		<div class="input-overlay-favorite">
 			<form>
+				<!--Creating the favorite's label and giving it a class and text-->
                 <label for="favoriteInput" class="favorite-label">Favorite?:</label>
 				<br>
+				<!--Creating the favorite's input, giving it a id, class, and name-->
                 <input type="checkbox" id="favoriteInput" class="custom-checkbox" name="favoriteInput">
 			</form>
 		</div>
 
-
+		<!--Creating the square background that all the inputs will sit on top of-->
         <div class="square">
             <div class="itemback"></div>
         </div>
-		
+		<!--Creating a header that says description-->
 			<h6>Description</h6>
-
+		<!--Creating a textarea that the description of the dream will inputted into to-->
+		<!--The text area was given rows, colums, and an id-->
          <div class="textarea-container">
 				<textarea rows="15" cols="45" id="descriptionInput"></textarea>
         </div>
-		
+		<!--Creating a button that will save the data in the inputs and take you back to the main page-->
 		<a href="index.html">
 			<button id="saveBtn" class="savebuttoncontainer">Save?</button>
 		</a>
-
+		<!--Linking the javascript files to the log html page-->>
 		<script src="functions.js"></script>
 		<script src="log.js"></script>
     </body>

@@ -199,40 +199,55 @@ img{
 	color: #483966;
     font-size: 4vw ;
     font-family: serif;	
+    /*Setting the favorite label's border to have a set radius*/
 	border-radius: 5px;
+    /*Setting the favorite label's width to be 144% of the original width*/
 	width: 144%;
 }
 
 textarea{
+    /*Does not allow the text area to be resized*/
     resize: none;
+    /*Made the border of the textarea have set width, line type, and color*/
     border: 5px solid #869cc6;
     border-radius: 5px;
+    /*Made the font size be 1.55% of the viewport's width*/
 	font-size: 1.55vw;
 }
 
 .textarea-container{
+    /*Made the text area be 12% of viewport's height from the bottom and 50% of viewport's width from the left*/
     position:absolute;
     bottom: 12vh;
     left:50vw;
 }
 
 h6 {
+    /*Made the header appear 60% of viewport's height from the bottom and 50% of the viewport's width from the left*/
     position: absolute;
     bottom: 60vh;
     left: 50vw;
+    /*Set the headers font size to be 3.8% of the viewport's width*/
     font-size: 3.8vw;
+    /*Set the header's background color to be white*/
     background-color: #ffffff;
+    /*Set the header's padding to be 3% of the viewport's height and 2% of the viewport's width*/
     padding: 3vh 2vw;
+    /*Set the header's text color*/
     color: #483966;
+    /*Set the header's border to have a set, corner radius, width, line type, and color.*/
     border-radius: 5px; 
     border: 5px solid #869cc6; 
 }
 
 #saveBtn{
+    /*Set the save button's corner radius, border width, and border color*/
     border-radius: 5px;
+    /*Set the save button's text color, font, and font size*/
     color: #483966;
     font-family: serif;
     font-size: 6.3vw;
+    /*Positioned the save button 78% of viewport's height from the bottom and 74.5% of viewport's width from the left*/
     position:absolute;
     bottom: 78vh;
     left:74.5vw;
@@ -241,14 +256,17 @@ h6 {
 	border-width: 5px;
 }
 .exitbuttoncontainer:hover{
+    /*when the exit button is hovered over it plays an animtion for 1 second, at a linear pace, for an infinitive amount of times*/
     animation: alittle 1s linear infinite;
 }
 
 .savebuttoncontainer:hover{
+    /*when the save button is hovered over it plays an animtion for 1 second, at a linear pace, for an infinitive amount of times*/
     animation: alittle 1s linear infinite;
 }
 
 @keyframes alittle {
+    /*This is a animation that over time rotates an element back and forth to give it a shaking effect*/
     0% {
         transform: rotate(0deg); 
     }

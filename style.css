@@ -1,20 +1,28 @@
 body{
-    
+    /*Sets the background to an image*/
     background-image: url('dreamer.png');
     background-size: cover;
 }
 
 h1{
+    /*sets the header text color, size, and font*/
+    /*positions the header 45% of the viewport's height from the bottom and 50% of the viewport's width from the left*/
     color: #d4ecff;
     position:absolute;
     bottom:45vh;
     left:50vw;
+	/* Center the element horizontally and vertically */
     transform: translateX(-50%);
     font-family: serif;
     font-size: 12vw;
 }
 
 button{
+    /*sets all buttons to a have background color*/
+    /*sets all buttons to have a text size, text color, and font*/
+    /*sets all buttons borders to be a certain color and corner rounding*/
+    /*sets the padding of all butons to be 10% of viewport's heights and 5% of the viewport's width*/
+    /*when you hover over buttons it turns your cursor into a pointer*/
     background-color: rgba(255, 255, 255, 100);
     font-size: 3vw;
     font-family: serif;
@@ -27,6 +35,9 @@ button{
 }
 
 .button-container {
+    /*buttons display horizontally center*/
+    /*buttons are 45 % of the viewport's height*/
+    /*The gap between buttons are 2% of viewport's width*/
     display: flex;
     justify-content: center;
     gap: 2vw; 
@@ -34,26 +45,33 @@ button{
   }
 
 .history-button{
+    /*when hovering over the history button it runs a transition*/
     transition: transform 2s;  
 }
 
 .history-button:hover{
+        /*when hovering over the history button it rotates it negative 3 degrees*/
     transform: rotate(-3deg);
 }
 
 .log-button{
+    /*when hovering over the log button it runs a transition*/
     transition: transform 2s;  
 }
 
 .log-button:hover{
+     /*when hovering over the log button it rotates it positive 3 degrees*/
     transform: rotate(3deg);
 }
 
 .header {
+    /*the header has a set text color*/
     color: #d4ecff; 
+    /*when hovering over a header it runs a transition for half a second at a ease pace*/
     transition: color 0.5s ease; 
 }
 
 .header:hover {
+    /*when hovering over a header it changes the text color*/
     color: #869cc6; 
 }

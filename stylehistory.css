@@ -26,17 +26,19 @@ img{
 }
 
 .exitcontainer{
-	//
+	/*Sets the exit button to appear in the top left of the screen */
 	display: flex;
     justify-content: flex-start;
     align-items: center; 
+	/*Sets the exit button's postition off an axis */
     flex-direction: row;
 }
 
 #historyexitBtn{
-	color: #d4ecff;
+	/*Set the exit button's background and border to be transparent*/
     background-color: transparent;
     border-color: transparent;
+	/*Set the exit button's margins to automatically be 0*/
 	margin: 0;
 }
 

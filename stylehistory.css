@@ -1,25 +1,32 @@
 body{
+	/*Sets the background to an image*/
     background-image: url('dreamer.png');
     background-size: cover;
 }
 
 h1{
+	/*Sets the header's text color and font size*/
     color: #d4ecff;
+	/*Positions the header 55% of viewport's height from the bottom and positions the header 50% of the viewport's width from the left*/
     position:absolute;
     bottom:55vh;
     left:50vw;
+	/* Center the element horizontally and vertically */
     transform: translateX(-50%);
     font-family: serif;
     font-size: 12vw;
 }
 
 img{
+	/*Sets the height of images to be 16% of the viewport's height and the width to be 7.8% of the viewport's width*/
 	width: 7.8vw;
 	height: 16vh;
+	/*When you hover over images your cursor becomes a pointer*/
 	cursor: pointer;
 }
 
-.container{
+.exitcontainer{
+	//
 	display: flex;
     justify-content: flex-start;
     align-items: center; 

@@ -189,64 +189,90 @@ img{
 }
 
 .squaretitleOutput3{
+	/*set the output text to be the serif font*/
 	font-family: serif;
 	position: absolute;
+	/* Set stacking order to 1 (above elements with lower z-index) */
 	z-index: 1;
+	/*set the text color of the outputs*/
 	color: #483966;
+	/*set the left margin of the square output to be 54% of the viewport's width*/
 	margin-left: 54vw;
 }
 
 .squaretitleOutput4{
+	/*set the output text to be the serif font*/
 	font-family: serif;
 	position: absolute;
+	/* Set stacking order to 1 (above elements with lower z-index) */
 	z-index: 1;
+	/*set the text color of the outputs*/
 	color: #483966;
+	/*set the left margin of the square output to be 68.2% of the viewport's width*/
 	margin-left: 68.2vw;
 }
 
 #titleOutput0, #titleOutput1, #titleOutput2, #titleOutput3, #titleOutput4{
+	/*sets all the title ouputs to have a set text color and text size*/
 	color: #483966;
 	font-size: 1vw;
+	/*Does not allow the title outputs to be resized*/
 	resize: none;
+	/*sets the outputs width to be 11% of the viewport's width*/
 	width: 11vw;
+	/*set the title outputs' background and border to be transparent*/
 	background-color: transparent;
     border-color: transparent;
 	
 }
 
 #typeOutput0, #typeOutput1, #typeOutput2, #typeOutput3, #typeOutput4{
+	/*sets all the type ouputs to have a set text color and text size*/
 	color: #483966;
 	font-size: 1vw;
+	/*Does not allow the type outputs to be resized*/
 	resize: none;
+	/*sets the outputs width to be 11% of the viewport's width*/
 	width: 11vw;
+	/*set the type outputs' background and border to be transparent*/
 	background-color: transparent;
     border-color: transparent;
 }
 
 #dateOutput0, #dateOutput1, #dateOutput2, #dateOutput3, #dateOutput4{
+	/*sets all the date ouputs to have a set text color and text size*/
 	color: #483966;
+	/*Does not allow the date outputs to be resized*/
 	resize: none;
+	/*sets the outputs width to be 11% of the viewport's width*/
 	width: 11vw;
 	font-size: 1vw;
+	/*set the date outputs' background and border to be transparent*/
 	background-color: transparent;
     border-color: transparent;
 }
 
 #descriptionOutput0, #descriptionOutput1, #descriptionOutput2, #descriptionOutput3, #descriptionOutput4{
+	/*sets all the description ouputs to have a set text color and text size*/
 	color: #483966;
+	/*Does not allow the date outputs to be resized*/
 	resize: none;
+	/*sets the outputs width to be 11% of the viewport's width and their height to be 37% of the viewport's height*/
 	width: 11vw;
 	height: 37vh;
 	font-size: 0.9vw;
+	/*set the descripiton outputs' background and border to be transparent*/
 	background-color: transparent;
     border-color: transparent;
 }
 
 .exit:hover{
+	/*when you hover a over the exit button a animation is played for 1 second, at linear pace, for a infinite amount of times*/
     animation: alittle 1s linear infinite;
 }
 
 @keyframes bordercolorchange {
+	/*changes the border color of an element porgressively*/
 	0%   {border-color:#869cc6;}
 	25%  {border-color:#9dd2fd;}
 	50%  {border-color:#bcdbf5;}
@@ -255,6 +281,7 @@ img{
 }
 
 @keyframes alittle {
+	/*rotates an element back and forth to induce a shaking effect*/
     0% {
         transform: rotate(0deg); 
     }
@@ -273,9 +300,14 @@ img{
 }
 
 .deleteBtn0class{
+	/*sets the delete button's text size, color, and font*/
+	/*sets the delete button's border width, line type, color, and corner rounding*/
+	/*sets the delete button's top margin to be 2% of the viewport's width*/
 	margin-top: 2vh;
 	position: absolute;
+	/*sets the delete button 18.8% of the viewport's width from the left*/
 	left: 18.8vw;
+	/* Set stacking order to 2 (above elements with lower z-index) */
 	z-index: 2;
 	font-size: 2vw;
 	border: 2px solid #869cc6;
@@ -285,13 +317,19 @@ img{
 }
 
 .deleteBtn0class:hover{
+	/*when the delete button is hovered over it runs an animation for 1 second, at linear pace, and infinite amount of times.*/
     animation: alittle 1s linear infinite;
 }
 
 .deleteBtn1class{
+	/*sets the delete button's text size, color, and font*/
+	/*sets the delete button's border width, line type, color, and corner rounding*/
+	/*sets the delete button's top margin to be 2% of the viewport's width*/
 	margin-top: 2vh;
 	position: absolute;
+	/*sets the delete button 32.8% of the viewport's width from the left*/
 	left: 32.8vw;
+	/* Set stacking order to 2 (above elements with lower z-index) */
 	z-index: 2;
 	font-size: 2vw;
 	border: 2px solid #869cc6;
@@ -301,13 +339,19 @@ img{
 }
 
 .deleteBtn1class:hover{
+	/*when the delete button is hovered over it runs an animation for 1 second, at linear pace, and infinite amount of times.*/
     animation: alittle 1s linear infinite;
 }
 
 .deleteBtn2class{
+	/*sets the delete button's text size, color, and font*/
+	/*sets the delete button's border width, line type, color, and corner rounding*/
+	/*sets the delete button's top margin to be 2% of the viewport's width*/
 	margin-top: 2vh;
 	position: absolute;
+	/*sets the delete button 46.8% of the viewport's width from the left*/
 	left: 46.8vw;
+	/* Set stacking order to 2 (above elements with lower z-index) */
 	z-index: 2;
 	font-size: 2vw;
 	border: 2px solid #869cc6;
@@ -317,13 +361,19 @@ img{
 }
 
 .deleteBtn2class:hover{
+	/*when the delete button is hovered over it runs an animation for 1 second, at linear pace, and infinite amount of times.*/
     animation: alittle 1s linear infinite;
 }
 
 .deleteBtn3class{
+	/*sets the delete button's text size, color, and font*/
+	/*sets the delete button's border width, line type, color, and corner rounding*/
+	/*sets the delete button's top margin to be 2% of the viewport's width*/
 	margin-top: 2vh;
 	position: absolute;
+	/*sets the delete button 61% of the viewport's width from the left*/
 	left: 61vw;
+	/* Set stacking order to 2 (above elements with lower z-index) */
 	z-index: 2;
 	font-size: 2vw;
 	border: 2px solid #869cc6;
@@ -333,13 +383,19 @@ img{
 }
 
 .deleteBtn3class:hover{
+	/*when the delete button is hovered over it runs an animation for 1 second, at linear pace, and infinite amount of times.*/
     animation: alittle 1s linear infinite;
 }
 
 .deleteBtn4class{
+	/*sets the delete button's text size, color, and font*/
+	/*sets the delete button's border width, line type, color, and corner rounding*/
+	/*sets the delete button's top margin to be 2% of the viewport's width*/
 	margin-top: 2vh;
 	position: absolute;
+	/*sets the delete button 75% of the viewport's width from the left*/
 	left: 75vw;
+	/* Set stacking order to 2 (above elements with lower z-index) */
 	z-index: 2;
 	font-size: 2vw;
 	border: 2px solid #869cc6;
@@ -349,5 +405,6 @@ img{
 }
 
 .deleteBtn4class:hover{
+	/*when the delete button is hovered over it runs an animation for 1 second, at linear pace, and infinite amount of times.*/
     animation: alittle 1s linear infinite;
 }

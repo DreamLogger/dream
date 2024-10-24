@@ -43,55 +43,77 @@ img{
 }
 
 #decreaseIndexBtn{
+	/*sets the decrease button's background and border to be transparent*/
     background-color: transparent;
     border-color: transparent;
+	/*set the decrease button's margins to automatically be 0*/
 	margin: 0;	
+	/*rotated the decrease button 180 degree*/
 	transform: rotate(180deg);
 }
 
 #increaseIndexBtn{
+	/*set the increase button's background and border to be transparent*/
     background-color: transparent;
     border-color: transparent;
+	/*set the increase button's margins to automatically be 0*/
 	margin: 0;	
 }
 
 .content-container{
+	/*sets the main content of the page to be spread evenly horizontally*/
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+	/*sets the main content of the page to be 20% of the viewport's height from the top*/
     margin-top: 20vh;
+	/*sets the padding of the content to be spaced horizontally from each other by 4% percent of the viewport's width*/
     padding: 0 4vw; 
 }
 
 .historysquarecontainer{
+	/*sets the square backgrounds to space evenly*/
 	display: flex;
     justify-content: space-around; 
+	/* Allows the background square to grow and take up available space in the flex container */
     flex-grow: 1; 
+	/*spaces the square backgrounds by 1.3% of the viewport's width from eachother*/
     margin: 0 1.3vw;
 }
 
 .historysquare{
+	/*sets the width of the background square to be 12% of the viewport's width and their height to be 47% of the viewport's height*/
     width: 12vw;
     height: 47vh;
+	/*Setting the background square's background to be white*/
     background-color: white;
+	/*Sets the border of the background square to have a set width, line type, color, and corner radius*/
 	border: 5px solid #869cc6;
 	border-radius: 5px;
 }
 
 .dropdown{
+	/* Display the element inline with others but allows it to have block properties such as width, height, etc*/
 	display: inline-block;
 	position: absolute;
+	/*Positions the dropdown 11% of viewport's height from the top and 20% of the viewport's width from the right*/
 	top: 11vh;
 	right:20vw;
 }
 
-.dropdown button{
+.dropdown button{ 
+	/* makes the dropdown button have set background color, set text color, and font*/
+	/*makes the dropdown button's border have a set width, line type, color, and corner rounding*/
 	background-color: white;
 	color: #483966;
 	border: 2px solid #869cc6;
 	border-radius: 5px;
+	/*sets the dropdown button's padding to be 1.6% of the viewports height and 1.2% of the viewport's width*/
 	padding: 1.6vh 1.2vw;
+	/*when you hover over the dropdown button it turns the cursor into a pointer*/
 	cursor: pointer;
+	/*This runs an animation whose cycle last 10 seconds to cycle infinitely*/
+	/*This animation changes the border color of the dropdown button*/
 	animation-name: bordercolorchange;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
@@ -99,50 +121,70 @@ img{
 }
 
 .dropdown .dropdown-content{
+	/*sets its to not display to the page automatically*/
 	display: none;
 	display: none;
 	position: absolute;
+	/*sets the dropdown content to have a white background*/
 	background-color: white;
+	/*sets the minimum width of the dropdown's content tobe 8% of viewport's width*/
 	min-width: 8vw;
+	/*Gives the dropwn content a border with a set, width, line type, color, and corner rounding*/
 	border: 2px solid #869cc6;
 	border-radius: 5px;
+	/*gives the dropdown content a shadow*/
 	box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.7);
 }
 
 .dropdown:hover .dropdown-content{
+	/* Display the element as a block, making it start on a new line and take up the full width */
 	display: block;
 	
 }
 
 .dropdown:hover button{
+	/*When you hover over the dropdown button its changes its background color to be lighter*/
 	background-color: hsl(0, 0%, 95%);
 }
 
 .radiolabelcontainer{
+	/*changes the text of color of the radio button labels*/
 	color: #483966;
 }
 
 .squaretitleOutput0{
+	/*set the output text to be the serif font*/
 	font-family: serif;
 	position: absolute;
+	/* Set stacking order to 1 (above elements with lower z-index) */
 	z-index: 1;
+	/*set the text color of the outputs*/
 	color: #483966;
+	/*set the left margin of the square output to be 12% of the viewport's width*/
 	margin-left: 12vw;
 }
 
 .squaretitleOutput1{
+	/*set the output text to be the serif font*/
 	font-family: serif;
 	position: absolute;
+	/* Set stacking order to 1 (above elements with lower z-index) */
 	z-index: 1;
+	/*set the text color of the outputs*/
 	color: #483966;
+	/*set the left margin of the square output to be 26% of the viewport's width*/
 	margin-left: 26vw;
 }
 
 .squaretitleOutput2{
+	/*set the output text to be the serif font*/
 	font-family: serif;
 	position: absolute;
+	/* Set stacking order to 1 (above elements with lower z-index) */
 	z-index: 1;
+	/*set the text color of the outputs*/
 	color: #483966;
+	/*set the left margin of the square output to be 40% of the viewport's width*/
 	margin-left: 40vw;
 }
 
